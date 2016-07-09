@@ -1,0 +1,21 @@
+---
+layout: default
+title: "Posts"
+permalink: /posts/
+---
+
+<section id="posts">
+  <h1 class="section-heading">Posts</h1>
+
+  <ul class="content-list width-ref">
+    {% for post in site.posts %}
+      <li class="width-half">
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="content-link" href="{{ post.url | prepend: site.basurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

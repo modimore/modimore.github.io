@@ -1,0 +1,71 @@
+name: Quinn Mortimer
+skills:
+  -
+    name: Programming Languages
+    content:
+      - C++
+      - Python
+      - C
+      - C#
+      - Ruby
+  -
+    name: Web Development
+    content:
+      - HTML
+      - CSS
+      - Javascript
+      - jQuery
+      - ASP.NET
+      - Flask
+      - Ruby on Rails
+      - Jekyll
+experience:
+  -
+    employer: UPS
+    website: https://www.ups.com
+    position: Application Development Intern
+    description: >
+      Developed internal web applications
+      used to monitor critical business processes.
+    skills:
+      - C#
+      - ASP.NET
+      - jQuery
+      - T-SQL
+    start: 2015-05-01
+    end: 2015-08-31
+  -
+    employer: PandA Lab (RPI)
+    website: http://panda.cogsci.rpi.edu
+    position: Lab Programmer
+    description: >
+      Improved C++ program used to run experiments and collect data.
+      Wrote code to handle 3D tracking hardware interface, and matrix tranformations.
+    skills:
+      - C++
+      - OpenGL
+    start: 2014-10-01
+    end: 2015-05-31
+  -
+    employer: SGS Consumer Testing Services
+    position: Product Testing Technician
+    description: >
+      Tested before-market toys, playsets, and children's furniture
+      against U.S. and international quality and safety standards.
+    start: 2014-05-01
+    end: 2014-08-31
+education:
+  -
+    school: Rensselaer Polytechnic Institute
+    qualification: Bachelor of Science
+    gpa: 3.73
+    fields:
+      - Computer Science
+    attendance:
+      start: 2012-08-01
+      end: 2015-12-31
+    courses:
+      - Advanced Computer Graphics
+      - Programming Languages
+      - Operating Systems
+      - Software Design and Documentation

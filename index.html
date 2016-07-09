@@ -1,0 +1,62 @@
+---
+layout: default
+---
+<div class="width-ref">
+  <section class="width-full">
+    {{ site.description }}
+  </section>
+</div>
+
+<div class="width-ref">
+
+  <section id="projects" class="width-half">
+
+    <h1 class="section-heading"><a href="{{ '/projects/' | prepend: site.baseurl }}">Projects</a></h1>
+
+    <ul class="content-list">
+      {% for project in site.projects %}
+        <li>
+          <h2>
+            <a class="content-link" href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>
+          </h2>
+        </li>
+      {% endfor %}
+    </ul>
+
+  </section>
+
+  <section id="pages" class="width-half">
+
+    <h1 class="section-heading"><a href="{{ '/about/' | prepend: site.baseurl }}">About Me</a></h1>
+
+    <ul class="content-list">
+      {% for page in site.about %}
+        <li>
+          <h2>
+            <a class="content-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          </h2>
+        </li>
+      {% endfor %}
+    </ul>
+
+  </section>
+
+  <!-- <section id="posts" class="width-half">
+
+    <h1 class="section-heading"><a href="{{ '/posts/' | prepend: site.baseurl }}">Posts</a></h1>
+
+    <ul class="content-list">
+      {% for post in site.posts %}
+        <li>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+          <h2>
+            <a class="content-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+        </li>
+      {% endfor %}
+    </ul>
+
+  </section> -->
+
+</div>

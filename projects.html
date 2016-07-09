@@ -1,0 +1,15 @@
+---
+layout: page
+title: "Projects"
+permalink: /projects/
+---
+
+<ul class="content-list width-ref">
+  {% for project in site.projects %}
+    <li class="width-half">
+      <h2>
+        <a class="content-link" href="{{ project.url | prepend: site.basurl }}">{{ project.title }}</a>
+      </h2>
+    </li>
+  {% endfor %}
+</ul>

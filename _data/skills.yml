@@ -1,0 +1,32 @@
+programming_languages:
+  - Python
+  - C++
+  - C
+  - Ruby
+  - C#
+  - Java
+  - PHP
+web_development:
+  - HTML
+  - CSS
+  - Javascript
+  - jQuery
+  - ASP.NET
+  - Flask
+  - Ruby on Rails
+  - Jekyll
+misc_programming:
+  - SQL (Postgres, T-SQL, SQLite)
+  - OpenGL and GLSL
+software_development:
+  - Object Oriented Design
+  - Encapsulation
+  - Database Design
+  - MVC
+  - Unit Testing
+teamwork:
+  - Agile Development
+  - Scrum
+  - Version Control
+  - Iterative Development
+  - Unified Process

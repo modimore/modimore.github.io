@@ -1,0 +1,25 @@
+$lang-bg-color: #33dd33;
+$tech-bg-color: #cc44cc;
+
+#skill-area {
+  text-align: center;
+}
+
+.bubble {
+  margin-right: 3px;
+
+  &:last-child { margin-right: 0px; }
+
+  padding: 3px;
+  border-radius: 3px;
+
+  color: darken($grey-color, 20%);
+
+  &.language {
+    background-color: $lang-bg-color;
+  }
+
+  &.technology {
+    background-color: $tech-bg-color;
+  }
+}
