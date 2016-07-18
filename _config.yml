@@ -1,46 +1,41 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
 title: modimore.github.io
 email: quinn.e.mortimer@gmail.com
 description: >
   Hi! My name is Quinn and this is my website. Look around for some information about my current projects and skills, or check out my resume.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "https://modimore.github.io" # the base hostname & protocol for your site
 # twitter_username:
-github_username:  modimore
-
-collections:
-  projects:
-    output: true
-  about:
-    output: true
-
+github_username: modimore
 
 defaults:
-  -
-    scope:
-      path: "_projects"
-      type: "projects"
-    values:
-      layout: "project"
-      sitemap_parent:
-        title: Projects
-        url: /projects/
   -
     scope:
       path: "_about"
       type: "about"
     values:
       layout: "page"
-      sitemap_parent:
-        title: About
-        url: /about/
+  -
+    scope:
+      path: "_projects"
+      type: "projects"
+    values:
+      layout: "project"
+  -
+    scope:
+      path: "_clean"
+      type: "clean"
+    values:
+      layout: "clean"
+      permalink: "/clean/"
+
+collections:
+  projects:
+    output: true
+  about:
+    output: true
+  clean:
+    output: false
 
 # Build settings
 markdown: kramdown

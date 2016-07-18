@@ -1,10 +1,10 @@
 <footer class="site-footer">
 
   <div class="wrapper">
-
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
+          <!-- <li>{{ site.title }}</li> -->
           <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
         </ul>
       </div>
@@ -23,10 +23,8 @@
         </ul>
       </div>
 
-      <div class="footer-col footer-col-3">
-        <p>
-          Feel free to email me or check out what I've pushed recently on github.
-        </p>
+      <div class="footer-col footer-col-3" style="text-align: right">
+        <a href="{{ site.url }}">{{ site.url }}</a>
       </div>
     </div>
 

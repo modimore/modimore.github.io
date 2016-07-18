@@ -19,6 +19,12 @@ skills:
       - Flask
       - Ruby on Rails
       - Jekyll
+  -
+    name: Other
+    content:
+      - SQL
+      - OpenGL
+      - Git
 experience:
   -
     employer: UPS
