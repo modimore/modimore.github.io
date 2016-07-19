@@ -15,9 +15,9 @@
         <tr>
           <th class="col-small">{{ category.name }}</td>
           <td>
-            <ul class="width-ref">
+            <ul>
               {% for skill in category.content %}
-                <li class="width-third">{{ skill }}</li>
+                <li class="lw-seg-12-4">{{ skill }}</li>
               {% endfor %}
             </ul>
           </td>
@@ -43,12 +43,12 @@
         </th>
         <td>{{ project.excerpt }}</td>
         <td class="col-small">
-          <ul class="width-ref">
+          <ul>
             {% for language in project.languages %}
-              <li class="width-half">{{ language }}</li>
+              <li class="lw-seg-12-6">{{ language }}</li>
             {% endfor %}
             {% for technology in project.technologies %}
-              <li class="width-half">{{ technology }}</li>
+              <li class="lw-seg-12-6">{{ technology }}</li>
             {% endfor %}
           </ul>
         </td>
@@ -77,9 +77,9 @@
           </td>
           {% if job.skills %}
             <td>
-              <ul class="width-ref">
+              <ul>
                 {% for skill in job.skills %}
-                  <li class="width-half">{{ skill }}</li>
+                  <li class="lw-seg-12-6">{{ skill }}</li>
                 {% endfor %}
               </ul>
             </td>
@@ -110,9 +110,9 @@
           <tr>
             <td colspan="2">
               <h4 class="cell-heading">Courses</h4>
-              <ul class="width-ref">
+              <ul>
                 {% for course in school.courses %}
-                  <li class="width-half">{{ course }}</li>
+                  <li class="lw-seg-12-6">{{ course }}</li>
                 {% endfor %}
               </ul>
             </td>

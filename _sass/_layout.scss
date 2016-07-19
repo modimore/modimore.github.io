@@ -1,3 +1,7 @@
+@import 'latticeworks/core';
+
+@include latticeworks-init;
+@include lw-segments(12);
 /**
  * Wrapper
  */
@@ -15,54 +19,6 @@
         max-width:         calc(#{$content-width} - (#{$spacing-unit}));
         padding-right: $spacing-unit / 2;
         padding-left: $spacing-unit / 2;
-    }
-}
-
-.width-ref {
-    margin-bottom: $spacing-unit;
-    width: 100%;
-    display: inline-block;
-
-    &:last-child {
-      margin-bottom: 0px;
-    }
-
-    > * {
-        float: left;
-        height: 100%;
-
-        margin-bottom: 0px;
-
-        &.width-full { width: 100%; }
-
-        &.width-half {
-            width: 50%;
-
-            @include media-query($on-palm) {
-                width: 100%;
-            }
-        }
-
-        &.width-third {
-          width: 33%;
-
-          &:nth-child(3n+2) {
-            width: 34%;
-          }
-
-          @include media-query($on-palm) {
-            width: 50%;
-          }
-        }
-
-        &.width-quarter {
-            width: 25%;
-
-            @include media-query($on-palm) {
-                width: 50%;
-            }
-        }
-
     }
 }
 

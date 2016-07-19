@@ -27,7 +27,6 @@ defaults:
       type: "clean"
     values:
       layout: "clean"
-      permalink: "/clean/"
 
 collections:
   projects:
