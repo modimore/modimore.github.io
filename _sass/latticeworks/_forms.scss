@@ -1,1 +1,22 @@
-/home/modimore/projects/latticeworks/scss/_forms.scss
+@include "_util";
+
+@mixin lattice-form($n) {
+  .lattice-form-$n {
+    @extend %clearfix;
+  }
+
+  %lw-field-common {
+    > input,
+    > textarea {
+      display: block;
+      width: 100%;
+    }
+  }
+  
+  @for $i from 1 through $n {
+    .lw-field-#{$n}-#{$i} {
+      @extend %lw-field-common;
+      width: $i / $n * 100%;
+    }
+  }
+}
