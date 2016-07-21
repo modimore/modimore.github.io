@@ -3,6 +3,7 @@ gh_repo_name: limit-manual
 title: "Limit Manual"
 languages: [ Python, SQL, HTML, CSS ]
 technologies: [ Flask, Postgres ]
+sort_index: 1
 ---
 A web application that aims to be a data-driven information source on the mechanics of Final Fantasy VII.
 

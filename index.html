@@ -9,8 +9,10 @@ layout: default
 
   <h1 class="section-heading"><a href="{{ '/projects/' | prepend: site.baseurl }}">Projects</a></h1>
 
+  {% assign projects = site.projects | sort: 'sort_index' %}
+
   <ul class="content-list">
-    {% for project in site.projects %}
+    {% for project in projects limit: 3 %}
       <li>
         <h2>
           <a class="content-link" href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>
@@ -37,7 +39,8 @@ layout: default
 
 </section>
 
-<!-- <section id="posts" class="lw-seg-12-12">
+{% comment %}
+<section id="posts" class="lw-seg-12-12">
 
   <h1 class="section-heading"><a href="{{ '/posts/' | prepend: site.baseurl }}">Posts</a></h1>
 
@@ -53,4 +56,5 @@ layout: default
     {% endfor %}
   </ul>
 
-</section> -->
+</section>
+{% endcomment %}

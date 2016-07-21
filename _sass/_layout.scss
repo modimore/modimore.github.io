@@ -1,7 +1,12 @@
 @import 'latticeworks/core';
+@import 'latticeworks/tables';
 
 @include latticeworks-init;
 @include lw-segments(12);
+
+@include lw-bar(12);
+
+@include lw-tables(12);
 /**
  * Wrapper
  */

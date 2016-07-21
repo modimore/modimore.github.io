@@ -3,6 +3,7 @@ gh_repo_name: OpenGL-Project-Base
 title: OpenGL Project Base
 languages: [ C++, GLSL ]
 technologies: [ OpenGL ]
+sort_index: 4
 ---
 An ongoing attempt at putting together some convenient boilerplate code for OpenGL 3.x Projects.
 

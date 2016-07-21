@@ -21,6 +21,10 @@
     border-collapse: collapse;
     background-color: $grey-color-light;
 
+    col, th, td {
+      &.col-small { width: 25%; }
+    }
+
     > thead, tbody {
       border-bottom: 2px solid $grey-color;
 
@@ -36,8 +40,6 @@
           border-right: 1px solid $grey-color;
 
           &:last-child { border-right: none; }
-
-          &.col-small { width: 25%; }
         }
       }
     }

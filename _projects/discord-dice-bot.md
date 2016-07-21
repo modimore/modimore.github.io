@@ -3,6 +3,7 @@ gh_repo_name: Discord-Dice-Bot
 title: "Discord Dice Bot"
 languages: [ Python ]
 technologies: [ RegEx ]
+sort_index: 2
 ---
 A script to run a dice-rolling bot on a [Discord] chat server.
 
