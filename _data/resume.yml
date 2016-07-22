@@ -31,8 +31,7 @@ experience:
     website: https://www.ups.com
     position: Application Development Intern
     description: >
-      Developed internal web applications
-      used to monitor critical business processes.
+      Developed internal web applications used to monitor critical business processes.
     skills:
       - C#
       - ASP.NET
@@ -45,8 +44,8 @@ experience:
     website: http://panda.cogsci.rpi.edu
     position: Lab Programmer
     description: >
-      Improved C++ program used to run experiments and collect data.
-      Wrote code to handle 3D tracking hardware interface, and matrix tranformations.
+      Developed utility code used for experiments
+      to learn about visual control over locomotion.
     skills:
       - C++
       - OpenGL
@@ -63,7 +62,7 @@ experience:
 education:
   -
     school: Rensselaer Polytechnic Institute
-    qualification: Bachelor of Science
+    qualification: B.S.
     gpa: 3.73
     fields:
       - Computer Science
@@ -72,6 +71,6 @@ education:
       end: 2015-12-31
     courses:
       - Advanced Computer Graphics
-      - Programming Languages
       - Operating Systems
+      - Programming Languages
       - Software Design and Documentation

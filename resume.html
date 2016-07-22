@@ -5,4 +5,11 @@ sitenav_visible: true
 permalink: /resume/
 ---
 
+{% assign name = site.data.resume.name %}
+{% assign skills = site.data.resume.skills %}
+{% assign projects = site.projects | sort: 'sort_index' %}
+{% assign project_limit = projects | size %}
+{% assign experience = site.data.resume.experience | sort: 'start' | reverse %}
+{% assign education = site.data.resume.education %}
+
 {% include resume.html %}

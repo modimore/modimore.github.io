@@ -21,6 +21,7 @@ defaults:
       type: "projects"
     values:
       layout: "project"
+      priority: 0
   -
     scope:
       path: "_clean"

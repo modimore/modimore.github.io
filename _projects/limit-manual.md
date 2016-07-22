@@ -5,7 +5,7 @@ languages: [ Python, SQL, HTML, CSS ]
 technologies: [ Flask, Postgres ]
 sort_index: 1
 ---
-A web application that aims to be a data-driven information source on the mechanics of Final Fantasy VII.
+A web application that aims to be a data-driven information source on Final Fantasy VII.
 
 Sites attempting to provide information on video games are often entirely text- or markup-based, with all information stored as string data types. All videogames use structured data of diverse types in some way, but these sites for the most part do not make use of that.
 

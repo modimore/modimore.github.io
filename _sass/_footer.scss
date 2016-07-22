@@ -10,6 +10,8 @@
 .site-footer-clean {
   @extend .site-footer;
 
+  padding: $spacing-unit/2 0;
+
   .lw-seg-12-4 {
     &:nth-child(3n+1) { text-align: left; }
     &:nth-child(3n+2) { text-align: center; }

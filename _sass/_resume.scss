@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.page-area {
+  padding: $spacing-unit/2 0;
+}
+
 #resume-header {
   h1 { @extend .center-text; }
 }
@@ -55,13 +59,14 @@
       margin-bottom: 0px;
 
       text-align: center;
-      font-style: italic;
-      text-decoration: underline;
+      font-weight: bold;
     }
   }
 
   .gh-project-cell {
     position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
 
     .icon.icon--github {
       position: absolute;
