@@ -35,7 +35,7 @@ collections:
   about:
     output: true
   clean:
-    output: false
+    output: true
 
 # Build settings
 markdown: kramdown

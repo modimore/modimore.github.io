@@ -3,16 +3,22 @@
 
 @include latticeworks-init;
 @include lw-segments(12);
-
 @include lw-bar(12);
-
 @include lw-tables(12);
+
+.main-section {
+  border-top: 1px solid $grey-color-light;
+
+  &:first-child {
+    border-top: 5px solid $grey-color-dark;
+  }
+}
+
 /**
  * Wrapper
  */
 .wrapper {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+    max-width: 760px;
     margin-right: auto;
     margin-left: auto;
     padding-right: $spacing-unit;
@@ -30,7 +36,6 @@
 /**
  * Page content
  */
-
 .page-area {
     padding: $spacing-unit 0;
 }
@@ -54,57 +59,5 @@
 }
 
 .content-link {
-    display: block;
     font-size: 24px;
-}
-
-.post-meta {
-    font-size: $small-font-size;
-    color: $grey-color;
-}
-
-
-/**
- * Posts
- */
-.post-header {
-    margin-bottom: $spacing-unit;
-}
-
-.post-title {
-    font-size: 42px;
-    letter-spacing: -1px;
-    line-height: 1;
-
-    @include media-query($on-laptop) {
-        font-size: 36px;
-    }
-}
-
-.post-content {
-    margin-bottom: $spacing-unit;
-
-    h2 {
-        font-size: 32px;
-
-        @include media-query($on-laptop) {
-            font-size: 28px;
-        }
-    }
-
-    h3 {
-        font-size: 26px;
-
-        @include media-query($on-laptop) {
-            font-size: 22px;
-        }
-    }
-
-    h4 {
-        font-size: 20px;
-
-        @include media-query($on-laptop) {
-            font-size: 18px;
-        }
-    }
 }

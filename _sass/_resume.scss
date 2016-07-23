@@ -2,12 +2,12 @@
   text-align: center;
 }
 
-.page-area {
-  padding: $spacing-unit/2 0;
-}
-
 #resume-header {
-  h1 { @extend .center-text; }
+  .resume-header-text {
+    font-size: 26px;
+    font-weight: 300;
+    letter-spacing: -1px;
+  }
 }
 
 #resume-body {
@@ -20,19 +20,14 @@
 
     &:first-child { margin-top: 0px; }
 
-    // border: 2px solid $grey-color;
     border-radius: 10px;
     border-collapse: collapse;
     background-color: $grey-color-light;
 
-    col, th, td {
-      &.col-small { width: 25%; }
-    }
-
     > thead, tbody {
       border-bottom: 2px solid $grey-color;
 
-      &:last-child { border-bottom: none;}
+      &:last-child { border-bottom: none; }
 
       > tr {
         border-top: 1px solid $grey-color;
@@ -40,7 +35,6 @@
 
         > * {
           padding: 2px 5px;
-
           border-right: 1px solid $grey-color;
 
           &:last-child { border-right: none; }
@@ -55,10 +49,9 @@
       > li { @extend .center-text; }
     }
 
-    .cell-heading {
+    h4 {
       margin-bottom: 0px;
 
-      text-align: center;
       font-weight: bold;
     }
   }

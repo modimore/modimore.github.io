@@ -2,15 +2,12 @@
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
     font-size: 15px;
 }
 
 .site-footer-clean {
   @extend .site-footer;
-
-  padding: $spacing-unit/2 0;
 
   .lw-seg-12-4 {
     &:nth-child(3n+1) { text-align: left; }

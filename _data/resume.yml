@@ -44,7 +44,7 @@ experience:
     website: http://panda.cogsci.rpi.edu
     position: Lab Programmer
     description: >
-      Developed utility code used for experiments
+      Wrote utility code used for experiments
       to learn about visual control over locomotion.
     skills:
       - C++

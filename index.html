@@ -14,9 +14,7 @@ layout: default
   <ul class="content-list">
     {% for project in projects limit: 3 %}
       <li>
-        <h2>
-          <a class="content-link" href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>
-        </h2>
+        <a class="content-link" href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>
       </li>
     {% endfor %}
   </ul>
@@ -30,31 +28,9 @@ layout: default
   <ul class="content-list">
     {% for page in site.about %}
       <li>
-        <h2>
-          <a class="content-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-        </h2>
+        <a class="content-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
       </li>
     {% endfor %}
   </ul>
 
 </section>
-
-{% comment %}
-<section id="posts" class="lw-seg-12-12">
-
-  <h1 class="section-heading"><a href="{{ '/posts/' | prepend: site.baseurl }}">Posts</a></h1>
-
-  <ul class="content-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="content-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-</section>
-{% endcomment %}
