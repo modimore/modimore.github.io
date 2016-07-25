@@ -4,7 +4,9 @@
 
     <div class="lw-seg-12-4">
       <ul class="contact-list">
-        <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        <li>
+          {% include icon-email.html email=site.email %}
+        </li>
       </ul>
     </div>
 

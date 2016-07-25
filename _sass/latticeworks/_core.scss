@@ -68,25 +68,21 @@
   }
 }
 
-/* Latticework bar styles */
-// Common bar styling
-%lw-bar-common {
-  position: relative;
-  width: 100%;
-  margin-left: 0px;
-  margin-right: 0px;
-  @extend %clearfix;
-}
+/* Latticework group styles */
 
-@mixin lw-bar($size) {
-  .lw-bar-#{$size} {
-    @extend %lw-bar-common;
+@mixin lw-group {
+  .lw-group {
+    position: relative;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    @extend %clearfix;
   }
 }
 
 /* Latticework lattice styles */
 // Common lattice styling
-%lattice-common {
+%lw-box-common {
   margin-left: auto;
   margin-right: auto;
   min-height: 1px;
@@ -94,25 +90,25 @@
 }
 
 // Full-width lattice
-@mixin lattice($size) {
-  .lattice-#{$size} {
-    @extend %lattice-common;
+@mixin lw-box($size) {
+  .lw-box-#{$size} {
+    @extend %lw-box-common;
   }
 }
 
 // Fixed-width lattice
-@mixin lattice-static($size, $lattice-width) {
-  .lattice-static-#{$size} {
-    @extend %lattice-common;
-    width: $lattice-width;
+@mixin lw-box-static($size, $lw-box-width) {
+  .lw-box-static-#{$size} {
+    @extend %lw-box-common;
+    width: $lw-box-width;
   }
 }
 
 // Adjust lattice width under screen width breakpoint
-@mixin lattice-static-cutoff($size, $screen-width-max, $lattice-width) {
+@mixin lw-box-static-cutoff($size, $screen-width-max, $lw-box-width) {
   @media screen and (max-width: $screen-width-max) {
-    .lattice-static-#{$size} {
-      width: $lattice-width;
+    .lw-box-static-#{$size} {
+      width: $lw-box-width;
     }
   }
 }

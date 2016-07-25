@@ -3,8 +3,8 @@
 
 @include latticeworks-init;
 @include lw-segments(12);
-@include lw-bar(12);
-@include lw-tables(12);
+@include lw-group;
+@include lw-tablefix(12);
 
 .main-section {
   border-top: 1px solid $grey-color-light;
