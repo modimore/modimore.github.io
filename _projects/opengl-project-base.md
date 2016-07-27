@@ -1,6 +1,7 @@
 ---
 gh_repo_name: OpenGL-Project-Base
 title: OpenGL Project Base
+core_skills: [ C++, OpenGL ]
 languages: [ C++, GLSL ]
 technologies: [ OpenGL ]
 sort_index: 4

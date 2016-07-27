@@ -1,6 +1,7 @@
 ---
 gh_repo_name: limit-manual
 title: "Limit Manual"
+core_skills: [ Python, Flask, CSS, SQL ]
 languages: [ Python, SQL, HTML, CSS ]
 technologies: [ Flask, Postgres ]
 sort_index: 1

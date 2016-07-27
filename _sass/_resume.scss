@@ -56,15 +56,25 @@
     }
   }
 
+  .courses {
+    font-size: $small-font-size;
+  }
+
   .gh-project-cell {
     position: relative;
-    padding-left: 20px;
-    padding-right: 20px;
 
-    .icon.icon--github {
-      position: absolute;
-      right: 2px;
-      bottom: 2px;
+    > a {
+      display: block;
+      width: 100%;
+    }
+
+    .icon-row {
+      display: block;
+      width: 100%;
+
+      .icon {
+        float: right;
+      }
     }
   }
 }

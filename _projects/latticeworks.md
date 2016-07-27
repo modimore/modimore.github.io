@@ -1,6 +1,7 @@
 ---
 gh_repo_name: Latticeworks
 title: Latticeworks
+core_skills: [ CSS, Sass ]
 languages: [ CSS, Sass ]
 technologies: []
 sort_index: 3

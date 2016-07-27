@@ -8,17 +8,16 @@ skills:
       - C
       - C#
       - Ruby
+      - Javascript
   -
     name: Web Development
     content:
       - HTML
       - CSS
-      - Javascript
       - jQuery
       - ASP.NET
       - Flask
       - Ruby on Rails
-      - Jekyll
   -
     name: Other
     content:
@@ -26,6 +25,18 @@ skills:
       - OpenGL
       - Git
 experience:
+  -
+    employer: Rensselaer Polytechnic Institute
+    website: http://cs.rpi.edu/
+    position: Computer Science Mentor
+    description: >
+      Held out-of-class help sessions for Comp Sci 1
+      and Data Structures students.
+    skills:
+      - Python
+      - C++
+    start: 2015-08-01
+    end: 2015-12-01
   -
     employer: UPS
     website: https://www.ups.com

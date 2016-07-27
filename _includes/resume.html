@@ -54,20 +54,19 @@
         <th {% if project.gh_repo_name %}class="gh-project-cell"{% endif %}>
           <a href="{{ project.url | prepend: site.baseurl }}">
           {{ project.title }}</a>
-          {% if project.gh_repo_name %}
-            <a class="icon icon--github" href="https://github.com/{{ site.github_username }}/{{ project.gh_repo_name }}">{% include svg/icon-github.svg %}</a>
-          {% endif %}
+          <div class="icon-row">
+            {% if project.gh_repo_name %}
+              <a class="icon icon--github" href="https://github.com/{{ site.github_username }}/{{ project.gh_repo_name }}">{% include svg/icon-github.svg %}</a>
+            {% endif %}
+          </div>
         </th>
 
         <td>{{ project.excerpt }}</td>
 
         <td>
           <ul class="lw-bar-12">
-            {% for language in project.languages %}
-              <li class="lw-seg-12-6">{{ language }}</li>
-            {% endfor %}
-            {% for technology in project.technologies %}
-              <li class="lw-seg-12-6">{{ technology }}</li>
+            {% for skill in project.core_skills %}
+              <li class="lw-seg-12-6">{{ skill }}</li>
             {% endfor %}
           </ul>
         </td>
@@ -118,12 +117,13 @@
   <table id="education">
     <colgroup>
       <col class="lw-seg-12-3"></col>
-      <col class="lw-seg-12-6"></col>
+      <col class="lw-seg-12-1"></col>
+      <col class="lw-seg-12-5"></col>
       <col class="lw-seg-12-3"></col>
     </colgroup>
 
     <thead>
-      <tr><th colspan="3">Education</th></tr>
+      <tr><th colspan="4">Education</th></tr>
     </thead>
 
     {% for school in education %}
@@ -132,7 +132,7 @@
           <th {% if school.courses %}rowspan="2"{% endif %}>
             {{ school.school }}
           </th>
-          <td class="center-text">
+          <td colspan="2" class="center-text">
               {{ school.qualification }} in {{ school.fields | join: ", " }}
               {% if school.gpa %}- GPA: {{ school.gpa }}{% endif %}
           </td>
@@ -140,9 +140,9 @@
         </tr>
 
         {% if school.courses %}
-          <tr>
+          <tr class="courses">
+            <th>Courses</th>
             <td colspan="2">
-              <h4>Courses</h4>
               <ul class="lw-bar-12">
                 {% for course in school.courses %}
                   <li class="lw-seg-12-6">{{ course }}</li>

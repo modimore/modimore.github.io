@@ -166,6 +166,8 @@ pre {
  * Icons
  */
 .icon {
+    line-height: 1;
+
     > svg {
         display: inline-block;
         width: 16px;
@@ -177,10 +179,21 @@ pre {
         }
     }
 
+    &.smaller {
+        > svg {
+            width: 14px;
+            height: 14px;
+        }
+    }
+
     &.larger {
         > svg {
             width: 24px;
             height: 24px;
         }
     }
+}
+
+i {
+  color: $grey-color;
 }

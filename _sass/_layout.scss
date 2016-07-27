@@ -8,9 +8,14 @@
 
 .main-section {
   border-top: 1px solid $grey-color-light;
+  padding: $spacing-unit 0;
 
   &:first-child {
     border-top: 5px solid $grey-color-dark;
+  }
+
+  .clean & {
+    padding: $spacing-unit/2 0;
   }
 }
 
@@ -37,7 +42,7 @@
  * Page content
  */
 .page-area {
-    padding: $spacing-unit 0;
+    //padding: $spacing-unit 0;
 }
 
 .page-header {

@@ -2,7 +2,7 @@
  * Site footer
  */
 .site-footer {
-    padding: $spacing-unit 0;
+    font-size: $small-font-size;
     font-size: 15px;
 }
 
@@ -14,7 +14,6 @@
     &:nth-child(3n+2) { text-align: center; }
     &:nth-child(3n+3) { text-align: right; }
   }
-
 }
 
 .contact-list,

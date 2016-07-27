@@ -1,6 +1,7 @@
 ---
 gh_repo_name: Discord-Dice-Bot
 title: "Discord Dice Bot"
+core_skills: [ Python, RegEx ]
 languages: [ Python ]
 technologies: [ RegEx ]
 sort_index: 2
