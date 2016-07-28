@@ -3,20 +3,25 @@
 }
 
 #resume-header {
-  .resume-header-text {
+  .resume-header-name {
     font-size: 26px;
     font-weight: 300;
     letter-spacing: -1px;
   }
 }
 
-#resume-body {
+#resume {
 
-  margin-top: $spacing-unit/2;
+  > * {
+    margin-top: $spacing-unit/2;
+
+    &:first-child {
+      margin-top: 0px;
+    }
+  }
 
   table {
     width: 100%;
-    margin-top: $spacing-unit/2;
 
     &:first-child { margin-top: 0px; }
 

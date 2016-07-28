@@ -2,10 +2,14 @@
 title: "Interests"
 ---
 
-In terms of what I would like to do, and the type of things I would like to work on, I really enjoy all elements of web application development. Bridging data stored by the computer and the end user of that data has consistently proven interesting to me. I think there's all types of data that can be presented more intuitively or stored more effectively (sometimes both), and one of the most interesting parts of having a hand at all stages of web design is managing the tradeoff between those two goals.
+The personal projects I am working on currently are intended to make it easier to play games, but two different types of games and in two different ways. One is an attempt to provide a reference to data about Final Fantasy VII (see [Limit Manual][]). Another is a chat bot that parses complex dice rolls for tabletop RPGs (see [Discord Dice Bot][]).
 
-I see opportunities to make technology more effective, from the perspective of all users frequently in my life. Recently the civic responsiblity of jury duty and the pure plaintext content storage as used by Wikia.
+In the past few months I've also been trying to make boilerplate projects. These projects are intended for eventual personal use, but working on them has also been great experience in its own right. I currently have one for [CSS grid styling][latticeworks] and one for [OpenGL projects][opengl project base].
 
-I would like to know more about desktop GUI development and computer security, but do not have any projects where I am doing major work in those areas at the moment.
+Eventually I hope to be able to work on web-based editable character sheets for traditional games. I also want to work on projects that are more interactive than traditional web pages, most likely though delving deeper into JavaScript.
 
-I am also interested in Computer Graphics, optimizing household tasks using technology, and the potential of the computer as a medium for non-traditional art.
+{% assign project_root = "/projects" | prepend: site.url %}
+[limit manual]: {{project_root}}/limit-manual
+[discord dice bot]: {{project_root}}/discord-dice-bot
+[latticeworks]: {{project_root}}/latticeworks
+[opengl project base]: {{project_root}}/opengl-project-base

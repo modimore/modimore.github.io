@@ -6,15 +6,15 @@
     education
 {% endcomment %}
 
-<header id="resume-header">
-  <h1 class="resume-header-text">{{ name }}</h1>
-</header>
+<div id="resume">
+  <header id="resume-header">
+    <h1 class="resume-header-name">{{ name }}</h1>
+  </header>
 
-<div id="resume-body">
   <table id="skills">
     <colgroup>
-      <col class="lw-seg-12-3"></col>
-      <col class="lw-seg-12-9"></col>
+      <col class="lw-cell-12-3"></col>
+      <col class="lw-cell-12-9"></col>
     </colgroup>
 
     <thead>
@@ -28,7 +28,7 @@
           <td>
             <ul class="lw-bar-12">
               {% for skill in category.content %}
-                <li class="lw-seg-12-4">{{ skill }}</li>
+                <li class="lw-cell-12-4">{{ skill }}</li>
               {% endfor %}
             </ul>
           </td>
@@ -39,9 +39,9 @@
 
   <table id="projects">
     <colgroup>
-      <col class="lw-seg-12-3"></col>
-      <col class="lw-seg-12-6"></col>
-      <col class="lw-seg-12-3"></col>
+      <col class="lw-cell-12-3"></col>
+      <col class="lw-cell-12-6"></col>
+      <col class="lw-cell-12-3"></col>
     </colgroup>
 
     <thead>
@@ -66,7 +66,7 @@
         <td>
           <ul class="lw-bar-12">
             {% for skill in project.core_skills %}
-              <li class="lw-seg-12-6">{{ skill }}</li>
+              <li class="lw-cell-12-6">{{ skill }}</li>
             {% endfor %}
           </ul>
         </td>
@@ -77,9 +77,9 @@
 
   <table id="experience">
     <colgroup>
-      <col class="lw-seg-12-3"></col>
-      <col class="lw-seg-12-6"></col>
-      <col class="lw-seg-12-3"></col>
+      <col class="lw-cell-12-3"></col>
+      <col class="lw-cell-12-6"></col>
+      <col class="lw-cell-12-3"></col>
     </colgroup>
 
     <thead>
@@ -104,7 +104,7 @@
             <td>
               <ul class="lw-bar-12">
                 {% for skill in job.skills %}
-                  <li class="lw-seg-12-6">{{ skill }}</li>
+                  <li class="lw-cell-12-6">{{ skill }}</li>
                 {% endfor %}
               </ul>
             </td>
@@ -116,10 +116,10 @@
 
   <table id="education">
     <colgroup>
-      <col class="lw-seg-12-3"></col>
-      <col class="lw-seg-12-1"></col>
-      <col class="lw-seg-12-5"></col>
-      <col class="lw-seg-12-3"></col>
+      <col class="lw-cell-12-3"></col>
+      <col class="lw-cell-12-1"></col>
+      <col class="lw-cell-12-5"></col>
+      <col class="lw-cell-12-3"></col>
     </colgroup>
 
     <thead>
@@ -145,7 +145,7 @@
             <td colspan="2">
               <ul class="lw-bar-12">
                 {% for course in school.courses %}
-                  <li class="lw-seg-12-6">{{ course }}</li>
+                  <li class="lw-cell-12-6">{{ course }}</li>
                 {% endfor %}
               </ul>
             </td>

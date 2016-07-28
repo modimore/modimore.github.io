@@ -2,7 +2,7 @@
 @import 'latticeworks/tables';
 
 @include latticeworks-init;
-@include lw-segments(12);
+@include lw-cells(12);
 @include lw-group;
 @include lw-tablefix(12);
 

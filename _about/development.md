@@ -3,7 +3,7 @@ title: "Software Development"
 ---
 {% assign skills = site.data.skills %}
 
-In addition to just writing code, both at school and in my work experience I have had opportunities to develop skills in the related areas.
+In addition to just writing code, both at school and in my work experience I have had opportunities to develop skills in these related areas.
 
 ## Software Design
 
