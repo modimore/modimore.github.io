@@ -26,7 +26,7 @@
         <tr>
           <th>{{ category.name }}</th>
           <td>
-            <ul class="lw-bar-12">
+            <ul class="lw-group">
               {% for skill in category.content %}
                 <li class="lw-cell-12-4">{{ skill }}</li>
               {% endfor %}
@@ -64,7 +64,7 @@
         <td>{{ project.excerpt }}</td>
 
         <td>
-          <ul class="lw-bar-12">
+          <ul class="lw-group">
             {% for skill in project.core_skills %}
               <li class="lw-cell-12-6">{{ skill }}</li>
             {% endfor %}
@@ -102,7 +102,7 @@
           </td>
           {% if job.skills %}
             <td>
-              <ul class="lw-bar-12">
+              <ul class="lw-group">
                 {% for skill in job.skills %}
                   <li class="lw-cell-12-6">{{ skill }}</li>
                 {% endfor %}
@@ -143,7 +143,7 @@
           <tr class="courses">
             <th>Courses</th>
             <td colspan="2">
-              <ul class="lw-bar-12">
+              <ul class="lw-group">
                 {% for course in school.courses %}
                   <li class="lw-cell-12-6">{{ course }}</li>
                 {% endfor %}
