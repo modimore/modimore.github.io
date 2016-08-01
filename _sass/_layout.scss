@@ -16,6 +16,12 @@
 
   .clean & {
     padding: $spacing-unit/2 0;
+
+    &:first-child {
+      @media print {
+        border-top: none;
+      }
+    }
   }
 }
 
@@ -23,7 +29,7 @@
  * Wrapper
  */
 .wrapper {
-    max-width: 760px;
+    max-width: 780px;
     margin-right: auto;
     margin-left: auto;
     padding-right: $spacing-unit;

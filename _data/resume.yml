@@ -26,7 +26,7 @@ skills:
       - Git
 experience:
   -
-    employer: Rensselaer Polytechnic Institute
+    employer: Computer Science Department (RPI)
     website: http://cs.rpi.edu/
     position: Computer Science Mentor
     description: >
@@ -85,3 +85,5 @@ education:
       - Operating Systems
       - Software Design and Documentation
       - Programming Languages
+      - Cryptography and Network Security
+      - Database Systems
