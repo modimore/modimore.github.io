@@ -3,8 +3,13 @@
 
 @include latticeworks-init;
 @include lw-cells(12);
+@include lw-cells-adjust-at(12, $on-palm, 6);
+@include lw-cells-adjust-at(12, 400px, 1);
+
 @include lw-group;
-@include lw-tablefix(12);
+
+@include lw-table-disable-clearfix;
+@include lw-tablecells(12);
 
 .main-section {
   border-top: 1px solid $grey-color-light;
@@ -29,12 +34,10 @@
  * Wrapper
  */
 .wrapper {
-    max-width: 780px;
-    margin-right: auto;
-    margin-left: auto;
+    @extend %lw-box;
+    max-width: $content-width;
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
-    @extend %clearfix;
 
     @include media-query($on-laptop) {
         max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
@@ -47,10 +50,6 @@
 /**
  * Page content
  */
-.page-area {
-    //padding: $spacing-unit 0;
-}
-
 .page-header {
   text-align: center;
 
