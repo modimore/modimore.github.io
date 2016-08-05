@@ -1,3 +1,10 @@
+# Generated files
+## Jekyll
 _site
-.sass-cache
 .jekyll-metadata
+
+## Sass
+.sass-cache
+
+## Bundler
+Gemfile.lock

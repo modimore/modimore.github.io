@@ -13,5 +13,9 @@ The language is based on the needs and reference conventions of tabletop rolepla
 
 A small python script then creates a chat client that puts messages through this parser and says rolls results back to the original channel. This is achieved through [discord.py][discord.py], the Discord API for Python.
 
+If you've got a server and want to roll dice on it, add pythia [here][add pythia]
+
 [discord]: https://discordapp.com
 [discord.py]: https://github.com/Rapptz/discord.py
+
+[add pythia]: https://discordapp.com/oauth2/authorize?client_id=202861748133298177&scope=bot&permissions=3072
