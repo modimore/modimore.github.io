@@ -28,8 +28,12 @@
     float: right;
     line-height: 56px;
 
-    .menu-icon {
+    #nav-toggle {
         display: none;
+    }
+
+    .nav-links {
+      display: block;
     }
 
     .page-link {
@@ -53,7 +57,7 @@
         border-radius: 5px;
         text-align: right;
 
-        .menu-icon {
+        #nav-toggle {
             display: block;
             float: right;
             width: 36px;
@@ -71,12 +75,13 @@
             }
         }
 
-        .trigger {
+        .nav-links {
             clear: both;
             display: none;
         }
 
-        &:hover .trigger {
+        &:hover .nav-links,
+        .nav-links.expanded {
             display: block;
             padding-bottom: 5px;
         }

@@ -32,27 +32,10 @@ p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
     margin-bottom: $spacing-unit / 2;
-}
 
-*:last-child { margin-bottom: 0px; }
-
-/**
- * Images
- */
-img {
-    max-width: 100%;
-    vertical-align: middle;
-}
-
-/**
- * Figures
- */
-figure > img {
-    display: block;
-}
-
-figcaption {
-    font-size: $small-font-size;
+    &:last-child {
+      margin-bottom: 0px;
+    }
 }
 
 /**
