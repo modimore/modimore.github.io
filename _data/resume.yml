@@ -3,28 +3,46 @@ skills:
   -
     name: Programming Languages
     content:
-      - C++
+      - Haxe
+      - JavaScript
+      - C/C++
       - Python
-      - C
       - C#
       - Ruby
-      - Javascript
   -
-    name: Web Development
-    content:
-      - HTML
-      - CSS
-      - jQuery
-      - ASP.NET
-      - Flask
-      - Ruby on Rails
-  -
-    name: Other
+    name: Other Computer Languages
     content:
       - SQL
+      - HTML
+      - CSS
+  -
+    name: APIs and Frameworks
+    content:
       - OpenGL
+      - Flambe
+      - Flask
+      - Ruby on Rails
+      - jQuery
+      - ASP.NET
+  -
+    name: Related Skills
+    content:
       - Git
+      - SVN
 experience:
+  -
+    employer: 1st Playable Productions
+    website: http://1stplayable.com/
+    position: Seasonal Programmer
+    description: >
+      Making small cross-platform children's games,
+      both fun and educational.
+    skills:
+      - Haxe
+      - Flambe
+      - JavaScript
+    start: 2016-09-12
+    # end: 2016-12-16
   -
     employer: Computer Science Department (RPI)
     website: http://cs.rpi.edu/
@@ -60,6 +78,7 @@ experience:
     skills:
       - C++
       - OpenGL
+      - Linear Algebra
     start: 2014-10-01
     end: 2015-05-31
   -

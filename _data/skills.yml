@@ -1,4 +1,6 @@
-programming_languages:
+languages:
+  - Haxe
+  - JavaScript
   - Python
   - C++
   - C
@@ -6,18 +8,26 @@ programming_languages:
   - C#
   - Java
   - PHP
-web_development:
+  - SQL (Postgres, T-SQL, SQLite)
   - HTML
   - CSS
-  - Javascript
+frameworks_apis:
+  - OpenGL
+  - Flambe
+  - Flask
+  - jQuery
+  - Ruby on Rails
+  - ASP.NET
+game_dev_and_graphics:
+  - OpenGL
+  - WebGL
+  - Flambe
+web_development:
+  - Flask
   - jQuery
   - ASP.NET
-  - Flask
   - Ruby on Rails
   - Jekyll
-misc_programming:
-  - SQL (Postgres, T-SQL, SQLite)
-  - OpenGL and GLSL
 software_development:
   - Object Oriented Design
   - Encapsulation
