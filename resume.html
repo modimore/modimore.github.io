@@ -10,6 +10,8 @@ permalink: /resume/
 {% assign projects = site.projects | sort: 'sort_index' %}
 {% assign project_limit = projects | size %}
 {% assign experience = site.data.resume.experience | sort: 'start' | reverse %}
+{% assign experience_limit = experience | size %}
 {% assign education = site.data.resume.education %}
+{% assign course_limit = 6 %}
 
 {% include resume.html %}

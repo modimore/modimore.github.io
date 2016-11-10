@@ -12,17 +12,19 @@
 
   > * {
     margin-top: $spacing-unit/2;
-
+    
     &:first-child {
       margin-top: 0px;
+    }
+    
+    .clean & {
+      margin-bottom: -2px;
     }
   }
 
   table {
     width: 100%;
-
-    &:first-child { margin-top: 0px; }
-
+    
     border-radius: 10px;
     border-collapse: collapse;
     background-color: $grey-color-light;

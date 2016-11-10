@@ -7,6 +7,8 @@ title: Resume
 {% assign projects = site.projects | sort: 'sort_index' %}
 {% assign project_limit = 4 %}
 {% assign experience = site.data.resume.experience | sort: 'start' | reverse %}
+{% assign experience_limit = 4 %}
 {% assign education = site.data.resume.education %}
+{% assign course_limit = 4 %}
 
 {% include resume.html %}

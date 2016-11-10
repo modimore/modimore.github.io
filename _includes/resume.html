@@ -22,7 +22,7 @@
       <tr><th colspan="3">Experience</th></tr>
     </thead>
     
-    {% for job in experience %}
+    {% for job in experience limit: experience_limit %}
       <tbody>
         <tr>
           <th rowspan="2">
@@ -89,7 +89,7 @@
             <th>Courses</th>
             <td colspan="2">
               <ul class="lw-group">
-                {% for course in school.courses %}
+                {% for course in school.courses limit: course_limit %}
                   <li class="lw-cell-12-6">{{ course }}</li>
                 {% endfor %}
               </ul>

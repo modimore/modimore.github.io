@@ -5,16 +5,16 @@ skills:
     content:
       - Haxe
       - JavaScript
-      - C/C++
+      - C++/C
       - Python
       - C#
       - Ruby
   -
-    name: Other Computer Languages
+    name: Other Languages
     content:
-      - SQL
       - HTML
       - CSS
+      - SQL
   -
     name: APIs and Frameworks
     content:
@@ -27,16 +27,17 @@ skills:
   -
     name: Related Skills
     content:
-      - Git
-      - SVN
+      - Git and SVN
+      - Design Patterns
+      - Agile Development
 experience:
   -
     employer: 1st Playable Productions
     website: http://1stplayable.com/
     position: Seasonal Programmer
     description: >
-      Making small cross-platform children's games,
-      both fun and educational.
+      Making cross-platform children's games
+      as a member of two small interdisciplinary teams.
     skills:
       - Haxe
       - Flambe
@@ -73,8 +74,8 @@ experience:
     website: http://panda.cogsci.rpi.edu
     position: Lab Programmer
     description: >
-      Wrote utility code used for experiments
-      to learn about visual control over locomotion.
+      Wrote mathematical utilities for a study on
+      the relationship between perception and action.
     skills:
       - C++
       - OpenGL
