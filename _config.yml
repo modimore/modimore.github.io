@@ -1,5 +1,6 @@
 # Site settings
 title: modimore.github.io
+repository: modimore/modimore.github.io
 email: quinn.e.mortimer@gmail.com
 description: >
   Hi! My name is Quinn and this is my website. Look around for some information about my current projects and skills, or check out my resume.
@@ -36,7 +37,7 @@ collections:
   about:
     output: true
   clean:
-    output: false
+    output: true
 
 # Build settings
 markdown: kramdown

@@ -4,7 +4,7 @@ title: "Limit Manual"
 core_skills: [ Python, Flask, CSS, SQL ]
 languages: [ Python, SQL, HTML, CSS ]
 technologies: [ Flask, Postgres ]
-sort_index: 1
+sort_index: 5
 ---
 A web application that aims to be a data-driven information source on Final Fantasy VII.
 
