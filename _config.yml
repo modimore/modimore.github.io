@@ -27,17 +27,17 @@ defaults:
       priority: 0
   -
     scope:
-      path: "_clean"
-      type: "clean"
+      path: "_print"
+      type: "print"
     values:
-      layout: "clean"
+      layout: "print"
 
 collections:
   projects:
     output: true
   about:
     output: true
-  clean:
+  print:
     output: true
 
 # Build settings
