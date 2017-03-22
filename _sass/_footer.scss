@@ -2,10 +2,15 @@
  * Site footer
  */
 .site-footer {
+    color: $color-accent-0-dark;
     font-size: $small-font-size;
+    
+    a {
+      color: $color-accent-0-dark;
+    }
 }
 
-.site-footer-clean {
+.site-footer-print {
   @extend .site-footer;
 
   .lw-cell-12-4 {

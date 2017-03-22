@@ -18,13 +18,17 @@ $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
 // Site Colors
-$text-color:        #111;
-$background-color:  #fdfdfd;
-$brand-color:       #2a7ae2;
+$color-primary: #b0b0c0;
+$color-primary-dark: darken($color-primary, 15%);
+$color-primary-light: lighten($color-primary, 10%);
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$color-secondary: #602;
+$color-secondary-dark: darken($color-secondary, 1%);
+$color-secondary-light: lighten($color-secondary, 10%);
+
+$color-accent-0: #828282;
+$color-accent-0-dark: darken($color-accent-0, 25%);
+$color-accent-0-light: lighten($color-accent-0, 40%);
 
 @mixin media-query($device) {
     @media screen and (max-width: $device) {

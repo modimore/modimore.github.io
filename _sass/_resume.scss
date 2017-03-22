@@ -27,20 +27,20 @@
     
     border-radius: 10px;
     border-collapse: collapse;
-    background-color: $grey-color-light;
+    background-color: $color-primary-dark;
 
     > thead, tbody {
-      border-bottom: 2px solid $grey-color;
+      border-bottom: 2px solid $color-accent-0;
 
       &:last-child { border-bottom: none; }
 
       > tr {
-        border-top: 1px solid $grey-color;
+        border-top: 1px solid $color-accent-0;
         &:first-child { border-top: none; }
 
         > * {
           padding: 2px 5px;
-          border-right: 1px solid $grey-color;
+          border-right: 1px solid $color-accent-0;
 
           &:last-child { border-right: none; }
         }
@@ -81,5 +81,5 @@
   
   padding: 10px;
   border-radius: 10px;
-  background-color: $grey-color-light;
+  background-color: $color-primary-dark;
 }

@@ -13,13 +13,13 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
+    background-color: $color-primary;
+    color: $color-secondary;
+    
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
-    color: $text-color;
-    background-color: $background-color;
     -webkit-text-size-adjust: 100%;
     -webkit-font-feature-settings: "kern" 1;
     -moz-font-feature-settings: "kern" 1;
-    -o-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
 }
@@ -32,7 +32,7 @@ p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
     margin-bottom: $spacing-unit / 2;
-
+    
     &:last-child {
       margin-bottom: 0px;
     }
@@ -65,26 +65,22 @@ h1, h2, h3, h4, h5, h6 {
  */
 /* Set non-link anchors to render as plain text */
 a {
-  color: $text-color;
-  text-decoration: none;
+    &, &:hover { text-decoration: none; }
 
-  &:hover { text-decoration: none; }
-
-  &:link { color: $brand-color; }
-  &:visited { color: darken($brand-color, 15%); }
-
-  &:link,
-  &:visited {
-    &:hover { text-decoration: underline; }
-  }
+    &:link,
+    &:visited {
+      color: $color-secondary-light;
+      
+      &:hover { text-decoration: underline; }
+    }
 }
 
 /**
  * Blockquotes
  */
 blockquote {
-    color: $grey-color;
-    border-left: 4px solid $grey-color-light;
+    color: $color-accent-0;
+    border-left: 4px solid $color-accent-0-light;
     padding-left: $spacing-unit / 2;
     font-size: 18px;
     letter-spacing: -1px;
@@ -101,7 +97,7 @@ blockquote {
 pre,
 code {
     font-size: 15px;
-    border: 1px solid $grey-color-light;
+    border: 1px solid $color-accent-0-light;
     border-radius: 3px;
     background-color: #eef;
 }
@@ -145,7 +141,7 @@ pre {
         vertical-align: middle;
 
         path {
-            fill: $grey-color;
+            fill: $color-accent-0-dark;
         }
     }
 
@@ -165,5 +161,5 @@ pre {
 }
 
 i {
-  color: $grey-color;
+  color: $color-accent-0;
 }

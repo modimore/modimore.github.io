@@ -13,7 +13,7 @@ $tech-bg-color: #cc44cc;
   padding: 3px;
   border-radius: 3px;
 
-  color: darken($grey-color, 20%);
+  color: darken($color-accent-0, 20%);
 
   &.language {
     background-color: $lang-bg-color;
