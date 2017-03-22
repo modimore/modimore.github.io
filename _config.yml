@@ -1,14 +1,15 @@
 # Site settings
 title: modimore.github.io
 repository: modimore/modimore.github.io
+baseurl: ""
+url: "https://modimore.github.io"
+
+# Maintainer info
 email: quinn.e.mortimer@gmail.com
+github_username: modimore
+
 description: >
   Hi! My name is Quinn and this is my website. Look around for some information about my current projects and skills, or check out my resume.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://modimore.github.io" # the base hostname & protocol for your site
-
-# twitter_username:
-github_username: modimore
 
 defaults:
   -
