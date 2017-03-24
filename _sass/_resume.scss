@@ -23,30 +23,6 @@
 	}
 
 	table {
-		width: 100%;
-		
-		border-radius: 10px;
-		border-collapse: collapse;
-		background-color: $color-primary-dark;
-
-		> thead, tbody {
-			border-bottom: 2px solid $color-accent-0;
-
-			&:last-child { border-bottom: none; }
-
-			> tr {
-				border-top: 1px solid $color-accent-0;
-				&:first-child { border-top: none; }
-
-				> * {
-					padding: 2px 5px;
-					border-right: 1px solid $color-accent-0;
-
-					&:last-child { border-right: none; }
-				}
-			}
-		}
-
 		ul {
 			margin-left: 0px;
 			list-style: none;
@@ -79,7 +55,7 @@
 .resume-note {
 	margin-top: $spacing-unit/2;
 	
-	padding: 10px;
-	border-radius: 10px;
+	padding: $spacing-unit/2;
+	border-radius: $spacing-unit/2;
 	background-color: $color-primary-dark;
 }
