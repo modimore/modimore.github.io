@@ -16,12 +16,13 @@ $small-font-size:	$base-font-size * 0.875;
 $base-line-height: 1.5;
 
 // Site Colors
-$color-primary: #fdfdfd;
+$color-primary: #dddddd;
 $color-primary-dark: darken($color-primary, 10%);
+$color-primary-light: lighten($color-primary, 10%);
 
-$color-secondary: #111;
-$color-secondary-dark: darken($color-secondary, 10%);
-$color-secondary-light: lighten($color-secondary, 40%);
+$color-secondary: #222;
+$color-secondary-dark: darken($color-secondary, 5%);
+$color-secondary-light: lighten($color-secondary, 30%);
 
 $color-accent-0: #828282;
 $color-accent-0-dark: darken($color-accent-0, 25%);
@@ -38,6 +39,7 @@ $color-accent-0-light: lighten($color-accent-0, 40%);
 	"base",
 	"layout",
 	"text",
+	"content",
 	"header",
 	"footer",
 	"resume",

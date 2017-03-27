@@ -49,32 +49,10 @@
 	}
 }
 
-/**
- * Page content
- */
-.page-header {
-	text-align: center;
-
-	> .page-title {
-		font-size: 32px;
-	}
+.pull-left {
+	align: left;
 }
 
-.section-heading {
-	text-align: center;
-	font-size: 28px;
-}
-
-.content-list {
-	margin-left: 0;
-	list-style: none;
-}
-
-.content-link {
-	font-size: 24px;
-}
-
-img.headshot {
-	margin: auto $spacing-unit/2;
-	border-radius: 50%;
+.pull-right {
+	float: right;
 }

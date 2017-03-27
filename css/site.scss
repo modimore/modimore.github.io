@@ -18,7 +18,7 @@ $small-font-size:	$base-font-size * 0.875;
 $base-line-height: 1.5;
 
 // Site Colors
-$color-primary: #b0b0c0;
+$color-primary: #a3a3b3;
 $color-primary-dark: darken($color-primary, 15%);
 $color-primary-light: lighten($color-primary, 10%);
 
@@ -41,6 +41,7 @@ $color-accent-0-light: lighten($color-accent-0, 40%);
 	"base",
 	"layout",
 	"text",
+	"content",
 	"header",
 	"footer",
 	"resume",
