@@ -1,42 +1,38 @@
-languages:
-  - Haxe
-  - JavaScript
-  - Python
-  - C++
-  - C
-  - Ruby
-  - C#
-  - Java
-  - PHP
-  - SQL (Postgres, T-SQL, SQLite)
-  - HTML
-  - CSS
-frameworks_apis:
-  - OpenGL
-  - Flambe
-  - Flask
-  - jQuery
-  - Ruby on Rails
-  - ASP.NET
-game_dev_and_graphics:
-  - OpenGL
-  - WebGL
-  - Flambe
-web_development:
-  - Flask
-  - jQuery
-  - ASP.NET
-  - Ruby on Rails
-  - Jekyll
-software_development:
+prog_languages_by_proficiency:
+  -
+    languages: [C++, Python, Haxe]
+    proficiency: Advanced Proficient
+  -
+    languages: [JavaScript, C, C#]
+    proficiency: Proficient
+  -
+    languages: [Ruby, Java]
+    proficiency: Working Knowledge
+  -
+    languages: [PHP, Haskell]
+    proficiency: Basic Knowledge
+other_skills_by_category:
+  -
+    name: Domain-specific languages
+    skills: [SQL, Bash]
+  -
+    name: Web Development
+    skills: [HTML, CSS, Flask, Ruby on Rails, ASP.NET, jQuery]
+  -
+    name: Game Development and Graphics
+    skills: [OpenGL, Flambe, HaxeFlixel]
+software_design:
   - Object Oriented Design
   - Encapsulation
-  - Database Design
+  - RAII
   - MVC
-  - Unit Testing
-teamwork:
+  - Scene Graphs
+development_practices:
   - Agile Development
   - Scrum
-  - Version Control
   - Iterative Development
   - Unified Process
+collaboration_tools:
+  - SVN (Tortoise Client)
+  - Bugzilla
+  - Git

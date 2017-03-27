@@ -1,0 +1,68 @@
+---
+title: Programming
+---
+{% assign skills = site.data.skills %}
+
+<p>
+	Over the years I've been able to gain experience with a number of
+	programming languages. Most of my experience is in primarily imperative,
+	object-oriented languages.
+</p>
+<p>
+	Some notable general-purpose languages are listed here, ordered based on
+	my familiarity in the language.
+</p>
+
+<table>
+	<colgroup>
+		<col class="lw-cell-12-4">
+		<col class="lw-cell-12-8">
+	</colgroup>
+	<thead>
+		<tr>
+			<th>Proficiency</th>
+			<th>Languages</th>
+		</tr>
+	</thead>
+	<tbody>
+		{% for level in skills.prog_languages_by_proficiency %}
+			<tr>
+				<th>{{ level.proficiency }}</th>
+				<td>
+					{% for language in level.languages %}
+						<span class="lw-cell-12-4 text-center">{{ language }}</span>
+					{% endfor %}
+				</td>
+			</tr>
+		{% endfor %}
+	</tbody>
+</table>
+
+<p>
+	I've also worked with a number of more specific technologies.
+</p>
+
+<table>
+	<colgroup>
+		<col class="lw-cell-12-4">
+		<col class="lw-cell-12-8">
+	</colgroup>
+	<thead>
+		<tr>
+			<th>Categories</th>
+			<th>Skills</th>
+		</tr>
+	</thead>
+	<tbody>
+		{% for category in skills.other_skills_by_category %}
+			<tr>
+				<th>{{ category.name }}</th>
+				<td>
+					{% for skill in category.skills %}
+						<span class="lw-cell-12-4 text-center">{{ skill }}</span>
+					{% endfor %}
+				</td>
+			</tr>
+		{% endfor %}
+	</tbody>
+</table>

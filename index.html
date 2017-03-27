@@ -22,11 +22,15 @@ layout: default
 	<h1 class="section-heading"><a href="{{ '/about/' | prepend: site.baseurl }}">About Me</a></h1>
 
 	<ul class="content-list">
-		{% for page in site.about %}
-			<li>
-				<a class="content-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-			</li>
-		{% endfor %}
+		<li>
+			<a class="content-link" href="{{ '/about/programming.html'| prepend: site.baseurl }}">Programming</a>
+		</li>
+		<li>
+			<a class="content-link" href="{{ '/about/development.html' | prepend: site.baseurl }}">Development</a>
+		</li>
+		<li>
+			<a class="content-link" href="{{ '/about/interests.html' | prepend: site.baseurl }}">Interests</a>
+		</li>
 	</ul>
 
 </section>
