@@ -31,7 +31,11 @@
 	font-size: 24px;
 }
 
+headshot-container {
+	margin: auto 10px;
+}
+
 img.headshot {
-	margin: auto $spacing-unit/2;
+	width: 100%;
 	border-radius: 50%;
 }
