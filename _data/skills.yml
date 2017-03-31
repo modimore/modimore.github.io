@@ -21,18 +21,25 @@ other_skills_by_category:
   -
     name: Game Development and Graphics
     skills: [OpenGL, Flambe, HaxeFlixel]
-software_design:
-  - Object Oriented Design
-  - Encapsulation
-  - RAII
-  - MVC
-  - Scene Graphs
-development_practices:
-  - Agile Development
-  - Scrum
-  - Iterative Development
-  - Unified Process
-collaboration_tools:
-  - SVN (Tortoise Client)
-  - Bugzilla
-  - Git
+development:
+  -
+    name: Software Development Practices
+    skills:
+      - Agile Development
+      - Iterative Development
+      - Scrum
+  -
+    name: Software Design Concepts And Patterns
+    skills:
+      - Object Oriented Design
+      - Encapsulation
+      - Single Responsiblity Principle
+      - MVC
+      - Event-driven Architecture
+      - Object Pool
+  -
+    name: Collaboration Tools
+    skills:
+      - Git
+      - SVN (Tortoise Client)
+      - Bugzilla

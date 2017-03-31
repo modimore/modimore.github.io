@@ -9,26 +9,13 @@ title: Development Practices
 	development practices and tools that facilitate these practices.
 </p>
 
-<hr></hr>
-<h3>Software Development Practices</h3>
-<ul>
-	{% for skill in skills.development_practices %}
-		<li class="lw-cell-12-4">{{ skill }}</li>
-	{% endfor %}
-</ul>
-
-<hr></hr>
-<h3>Software Design Concepts</h3>
-<ul>
-	{% for skill in skills.software_design %}
-		<li class="lw-cell-12-4">{{ skill }}</li>
-	{% endfor %}
-</ul>
-
-<hr></hr>
-<h3>Collaboration Tools</h3>
-<ul>
-	{% for tool in skills.collaboration_tools %}
-		<li class="lw-cell-12-4">{{ tool }}</li>
-	{% endfor %}
-</ul>
+{% for group in skills.development %}
+	<section class="skill-group">
+		<h3>{{ group.name }}</h3>
+		<ul>
+			{% for skill in group.skills %}
+				<li class="lw-cell-12-4">{{ skill }}</li>
+			{% endfor %}
+		</ul>
+	</section>
+{% endfor %}
