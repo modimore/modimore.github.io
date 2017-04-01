@@ -1,7 +1,7 @@
 ---
 title: "Interests"
 ---
-Outside anything that involves much coding, my interests including playing
+Outside anything that involves much coding, my interests include playing
 videogames and tabletop RPGs, reading fantasy and science fiction, and
 watching anime.
 
