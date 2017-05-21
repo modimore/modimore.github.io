@@ -28,12 +28,12 @@
 					<th rowspan="2">
 						<a{% if job.website %} href="{{ job.website }}"{% endif %}>{{ job.employer }}</a>
 					</th>
-					<td class="center-text">{{ job.position }}</td>
-					<td class="center-text">{{ job.start | date: "%m/%Y" }} - {{ job.end | date: "%m/%Y" | default: "Present" }}</td>
+					<td class="text-center">{{ job.position }}</td>
+					<td class="text-center">{{ job.start | date: "%m/%Y" }} - {{ job.end | date: "%m/%Y" | default: "Present" }}</td>
 				</tr>
 				
 				<tr>
-					<td {% unless job.skills %}colspan="2"{% endunless %} class="center-text">
+					<td {% unless job.skills %}colspan="2"{% endunless %} class="text-center">
 						{{ job.description }}
 					</td>
 					{% if job.skills %}
@@ -77,11 +77,11 @@
 					<th {% if school.courses %}rowspan="2"{% endif %}>
 						{{ school.school }}
 					</th>
-					<td colspan="2" class="center-text">
+					<td colspan="2" class="text-center">
 							{{ school.qualification }} in {{ school.fields | join: ", " }}
 							{% if school.gpa %}- GPA: {{ school.gpa }}{% endif %}
 					</td>
-					<td class="center-text">{{ school.attendance.start | date: "%m/%Y" }} - {{ school.attendance.end | date: "%m/%Y" }}</td>
+					<td class="text-center">{{ school.attendance.start | date: "%m/%Y" }} - {{ school.attendance.end | date: "%m/%Y" }}</td>
 				</tr>
 				
 				{% if school.courses %}
