@@ -32,6 +32,19 @@ skills:
       - Agile Development
 experience:
   -
+    employer: Bluewolf, An IBM Company
+    website: https://www.bluewolf.com
+    position: Developer I
+    description: >
+      Develop extensions, customisations, and integrations on
+      clients' Salesforce Orgs as part of the long-term
+      engagement team.
+    skills:
+      - Salesforce
+      - Apex
+      - JavaScript
+    start: 2017-06-26
+  -
     employer: 1st Playable Productions
     website: http://1stplayable.com/
     position: Seasonal Programmer
