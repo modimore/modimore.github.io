@@ -1,0 +1,12 @@
+# .gitignore for this Pelican project
+
+# General Python artifacts
+__pycache__/
+*.pyo, *.pyc
+
+# Virtualenv folder
+venv/
+
+# Site build directory
+output/
+output-dev/
