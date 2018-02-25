@@ -36,13 +36,12 @@ experience:
     website: https://www.bluewolf.com
     position: Developer I
     description: >
-      Develop extensions, customisations, and integrations on
-      clients' Salesforce Orgs as part of the long-term
-      engagement team.
+      Developing front-end and back-end solutions to help clients
+      run their businesses with SalesForce.
     skills:
-      - Salesforce
-      - Apex
       - JavaScript
+      - Apex
+      - Lightning Components
     start: 2017-06-26
   -
     employer: 1st Playable Productions
