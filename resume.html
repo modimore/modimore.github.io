@@ -1,22 +1,100 @@
----
-layout: default
-title: Resume
-sitenav_visible: true
-permalink: /resume/
----
+<!DOCTYPE html>
+<html lang="english">
+<head>
+	<meta charset="utf-8" />
+	<title>Resume</title>
+	<link rel="stylesheet" href="https://modimore.github.io/theme/css/main.css" />
+	<link href="https://modimore.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="modimore.github.io Atom Feed" />
 
-{% assign name = site.data.resume.name %}
-{% assign skills = site.data.resume.skills %}
-{% assign projects = site.projects | sort: 'sort_index' %}
-{% assign project_limit = projects | size %}
-{% assign experience = site.data.resume.experience | sort: 'start' | reverse %}
-{% assign experience_limit = experience | size %}
-{% assign education = site.data.resume.education %}
-{% assign course_limit = 6 %}
+	<!--[if IE]>
+		<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
 
-{% include resume.html %}
+<body id="index" class="home">
+	<header id="banner" class="main-wrapper">
+		<h1><a href="https://modimore.github.io/">modimore.github.io </a></h1>
+		<nav><ul>
+			<li><a href="https://modimore.github.io/about-me.html">About Me</a></li>
+			<li class="active"><a href="https://modimore.github.io/resume.html">Resume</a></li>
+			<li><a href="https://modimore.github.io/category/projects.html">Projects</a></li>
+		</ul></nav>
+	</header><!-- /#banner -->
+	<section id="main-content">
+		<div class="main-wrapper">
+<section id="content">
+    <h1 class="entry-title">Resume</h1>
+    
+    <h3>Work Experience</h3>
+<h4><a href="https://www.bluewolf.com/">Bluewolf, An IBM Company</a> <span style="float:right">6/2017 - present</span></h4>
+<p>I am currently working as a <strong>SalesForce</strong> platform developer, making web
+applications and back-end processes to meet client's business needs.
+I have thus far been the primary developer on two multi-month client projects.
+Much of my work relates to the SalesForce Lightning Experience and Lightning
+Component framework.</p>
+<h4><a href="http://www.1stplayable.com/">1st Playable Productions</a> <span style="float:right">9/2016 - 12/2016</span></h4>
+<p>At 1P I developed web-based children's games in <strong>JavaScript</strong> and <strong>Haxe</strong>.
+Primarily I worked on a multi-stage game based on a episode of a popular
+children's TV show. The remainder were educational games for Elementary school
+students integrated into a larger site.</p>
+<h4><a href="https://www.cs.rpi.edu/">RPI Computer Science Department</a> <span style="float:right">8/2015 - 12/2015</span></h4>
+<p>As a computer science mentor I held out-of-class help sessions for students in
+Computer Science I and Data Structures, taught with <strong>Python</strong> and <strong>C++</strong>
+respectively. I was also a teaching assistant for some CS1 lab sections.</p>
+<h4><a href="https://ups.com/">UPS</a> <span style="float:right">5/2015 - 8/2015</span></h4>
+<p>During the summer I maintained and extended an internal <strong>.NET</strong> web application
+for monitoring delivery statuses. It was used in a command center for monitoring
+the day-to-day health of ground shipping operations.</p>
+<h4><a href="http://panda.cogsci.rpi.edu/">RPI Panda Lab</a> <span style="float:right">10/2014 - 5/2015</span></h4>
+<p>Worked as a programmer in a lab performing studies on the relationship between
+visual processing and locomotion. Wrote <strong>C++</strong> code to render graphics with
+<strong>OpenGL</strong> and interface with <strong>motion capture</strong> hardware to collect experiment
+data.</p>
+<h3>Education</h3>
+<h4>Rensselaer Polytechnic Institute <span style="float:right">08/2012 - 12/2015</span></h4>
+<p>Studied Computer Science and Electrical Engineering. Graduated in 2015 with a
+Computer Science Degree. Courses taken include <em>Operating Systems</em>,
+<em>Advanced Computer Graphics</em>, <em>Database Systems</em>, <em>Programming Languages</em>,
+<em>Software Design and Documentation</em>, and <em>Cryptography and Network Security</em>.</p>
+<h3>Personal Projects</h3>
+<h4><a href="https://github.com/modimore/breezeblocks">Breezeblocks</a></h4>
+<p>Breezeblocks is a <strong>Python</strong> package for generating and executing SQL statements,
+then getting the results back in Python. It uses the <strong>builder pattern</strong> to allow
+the user to flexibly construct queries, inserts, updates, and deletes.</p>
+<h4><a href="https://github.com/modimore/Discord-Dice-Bot">Discord Dice Bot</a></h4>
+<p>A while back I made a dice-rolling bot for <a href="https://discordapp.com">Discord</a> chat
+servers. It is written in <strong>Python</strong>. I originally made the bot nearer to when
+Discord was released for a D&amp;D group I was playing with. I keep a bot running on
+<strong>Heroku</strong> which is also used by tabletop RPG groups I am not playing with.</p>
+</section>
+		</div>
+	</section>
+	<section id="extras" class="main-wrapper">
+		<div class="blogroll">
+			<h2>links</h2>
+			<ul>
+				<li><a href="https://pypi.python.org/pypi/breezeblocks/">BreezeBlocks on RtD</a></li>
+				<li><a href="https://breezeblocks.readthedocs.io/en/latest">BreezeBlocks on PyPi</a></li>
+				<li><a href="https://discordapp.com/oauth2/authorize?client_id=202861748133298177&scope=bot&permissions=3072">Pythia Discord Bot</a></li>
+			</ul>
+		</div><!-- /.blogroll -->
+		<div class="social">
+			<h2>social</h2>
+			<ul>
+				<li><a href="https://modimore.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
 
-<p class="lw-cell-12-12 resume-note">
-	A single-page version of this resume suitable for printing
-	as a PDF can be found <a href="{{site.url}}/print/resume">here</a>.
-</p>
+				<li><a href="https://github.com/modimore">GitHub</a></li>
+			</ul>
+		</div><!-- /.social -->
+	</section><!-- /#extras -->
+
+	<footer id="contentinfo" class="main-wrapper">
+		<address id="about" class="vcard body">
+		Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+		</address><!-- /#about -->
+
+		<p>This theme is a modified version of the <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing HTML5!</a> layout by Smashing Magazine.</p>
+	</footer><!-- /#contentinfo -->
+
+</body>
+</html>

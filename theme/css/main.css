@@ -1,0 +1,418 @@
+/* This file is a modified version of the original described by: */
+/*
+	Name: Smashing HTML5
+	Date: July 2009
+	Description: Sample layout for HTML5 and CSS3 goodness.
+	Version: 1.0
+	License: MIT <http://opensource.org/licenses/MIT>
+	Licensed by: Smashing Media GmbH <http://www.smashingmagazine.com/>
+	Original author: Enrique Ramírez <http://enrique-ramirez.com/>
+*/
+
+/* Imports */
+@import url("reset.css");
+@import url("pygment.css");
+@import url("typogrify.css");
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz&subset=latin);
+
+/***** Global *****/
+/* Body */
+body {
+	background-color: #c7bfcf;
+	color: #000305;
+	font-size: 87.5%; /* Base font size: 14px */
+	font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	line-height: 1.429;
+	text-align: left;
+}
+
+.main-wrapper {
+	margin: 0 auto;
+	padding: 0.5rem;
+}
+
+#main-content > .main-wrapper > :not(:last-child) {
+	margin-bottom: 1.5rem;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Yanone Kaffeesatz', arial, serif;
+	font-weight: 400;
+	line-height: 1.1;
+	margin-bottom: .8rem;
+	text-align: center;
+}
+
+h1 {font-size: 2.5em}
+h2 {font-size: 2.0em}
+h3 {font-size: 1.75em}
+h4 {font-size: 1.5em}
+h5 {font-size: 1.25em}
+h6 {font-size: 1em}
+
+h3, h4, h5, h6 {margin-top: .8em;}
+	
+hr {border: 2px solid #444;}
+
+/* Anchors */
+a:link, a:visited {
+	color: #C74350;
+	padding: 0 1px;
+	text-decoration: underline;
+}
+a:hover, a:active {
+	background-color: #C74350;
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #333;
+}
+
+h1 a:hover {
+	background-color: inherit
+}
+	
+/* Paragraphs */
+p {margin: 1em 0;}
+
+/* Lists */
+dt {font-weight: bolder;}
+dd {margin-left: 1.5em;}
+
+.post-info {
+	float:right;
+	padding: 1em;
+}
+
+.post-info p {
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+
+.readmore {float: right}
+
+pre {
+	margin: 10px;
+	padding: 10px;
+	overflow: auto;
+	background-color: rgb(238, 238, 238);
+}
+
+/* Quotes */
+blockquote {
+	margin: 20px;
+	font-style: italic;
+}
+
+/* Tables */
+table {margin: .5em auto 1.5em auto; width: 98%;}
+th, td {padding: .5em .4em;}
+thead th {text-align: left;}
+
+/***** Layout *****/
+img.right, figure.right {float: right; margin: 0 0 2em 2em;}
+img.left, figure.left {float: left; margin: 0 2em 2em 0;}
+
+/*
+	Header
+*****************/
+/* Banner */
+#banner h1 a:link, #banner h1 a:visited {
+	color: #000305;
+	font-weight: bold;
+	text-decoration: none;
+}
+#banner h1 a:hover, #banner h1 a:active {
+	background: none;
+	color: #C74350;
+	text-shadow: none;
+}
+
+#banner h1 strong {
+	font-size: 0.36em;
+	font-weight: normal;
+}
+
+/* Main Nav */
+#banner nav {
+	background: #000305;
+	font-size: 1.143em;
+	line-height: 2em;
+	text-align: center;
+	overflow:hidden;
+	
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#banner nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	overflow: auto;
+}
+#banner nav li {
+	display: block;
+	margin: 0;
+}
+
+#banner nav a {
+	color: #fff;
+	display: block;
+	padding: 2px 0;
+}
+
+#banner nav a:link, #banner nav a:visited {
+	text-decoration: none;
+}
+#banner nav a:hover, #banner nav a:active,
+#banner nav .active a:link, #banner nav .active a:visited {
+	background: #C74451;
+	text-shadow: none !important;
+}
+
+/*
+	Featured
+*****************/
+#featured {
+	background: #bce;
+	overflow: hidden;
+	padding: 20px;
+	
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+/*
+	Body
+*****************/
+#content {
+	background-color: #bce;
+	overflow: hidden;
+	padding: 20px;
+	
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+/*
+	Extras
+*****************/
+#extras ul {list-style: none; padding: 0; margin: 0;}
+#extras li {border-bottom: 2px solid #433;}
+#extras h2 {
+	color: #C74350;
+	font-size: 1.429em;
+	margin: .25em 0;
+	padding: 0 .25em;
+}
+
+#extras a:link, #extras a:visited {
+	color: #444;
+	display: block;
+	text-decoration: none;
+	padding: .3em .25em;
+}
+
+#extras a:hover, #extras a:active {
+	color: #fff;
+	border-color: #433;
+}
+
+/* Blogroll */
+#extras div[class='social'] a {
+	background-repeat: no-repeat;
+	background-position: 3px 6px;
+	padding-left: 25px;
+}
+
+/* Icons */
+.social a[href*='about.me'] {background-image: url('../images/icons/aboutme.png');}
+.social a[href*='bitbucket.org'] {background-image: url('../images/icons/bitbucket.png');}
+.social a[href*='delicious.com'] {background-image: url('../images/icons/delicious.png');}
+.social a[href*='digg.com'] {background-image: url('../images/icons/digg.png');}
+.social a[href*='facebook.com'] {background-image: url('../images/icons/facebook.png');}
+.social a[href*='gitorious.org'] {background-image: url('../images/icons/gitorious.png');}
+.social a[href*='github.com'],
+.social a[href*='git.io'] {
+	background-image: url('../images/icons/github.png');
+	background-size: 16px 16px;
+}
+.social a[href*='gittip.com'] {background-image: url('../images/icons/gittip.png');}
+.social a[href*='plus.google.com'] {background-image: url('../images/icons/google-plus.png');}
+.social a[href*='groups.google.com'] {background-image: url('../images/icons/google-groups.png');}
+.social a[href*='news.ycombinator.com'],
+.social a[href*='hackernewsers.com'] {background-image: url('../images/icons/hackernews.png');}
+.social a[href*='last.fm'], .social a[href*='lastfm.'] {background-image: url('../images/icons/lastfm.png');}
+.social a[href*='linkedin.com'] {background-image: url('../images/icons/linkedin.png');}
+.social a[href*='reddit.com'] {background-image: url('../images/icons/reddit.png');}
+.social a[type$='atom+xml'], .social a[type$='rss+xml'] {background-image: url('../images/icons/rss.png');}
+.social a[href*='slideshare.net'] {background-image: url('../images/icons/slideshare.png');}
+.social a[href*='speakerdeck.com'] {background-image: url('../images/icons/speakerdeck.png');}
+.social a[href*='stackoverflow.com'] {background-image: url('../images/icons/stackoverflow.png');}
+.social a[href*='twitter.com'] {background-image: url('../images/icons/twitter.png');}
+.social a[href*='vimeo.com'] {background-image: url('../images/icons/vimeo.png');}
+.social a[href*='youtube.com'] {background-image: url('../images/icons/youtube.png');}
+
+/*
+	Footer
+*****************/
+#contentinfo {
+	margin-bottom: 1rem;
+}
+
+#contentinfo p {
+	text-align: right;
+}
+
+/*
+	About
+*****************/
+#about {
+	background-color: #bce;
+	margin-bottom: 1em;
+	padding: 20px;
+	
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+/***** Sections *****/
+/* Blog */
+.hentry {
+	display: block;
+	clear: both;
+}
+.hentry::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.hentry img {display : none;}
+
+.entry-title {
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-size: 3em;
+}
+.entry-title a:link,
+.entry-title a:visited {
+	color: #333;
+	text-decoration: none;
+}
+.entry-title a:visited {background-color: #fff;}
+
+/* Blog Index */
+#posts-list {
+	list-style: none;
+	padding: 0;
+}
+#posts-list > li {
+	border-bottom: 1px solid #444;
+	padding: 1em 0;
+}
+#posts-list > li:last-child {
+	border-bottom: none;
+}
+
+#posts-list footer {
+	float: left;
+	width: 25%;
+}
+
+.paginator {
+	text-align: center;
+}
+
+/*********************
+ * Tablet Breakpoint *
+ *********************/
+@media screen and (min-width: 650px) {
+	h1, h2, h3, h4, h5, h6 {
+		text-align: left;
+	}
+	
+	#banner h1 {
+		font-size: 3.571em;
+	}
+	
+	#banner nav li {
+		display: inline-block;
+		float: left;
+	}
+	
+	#banner nav a {
+		display: inline-block;
+		padding: 5px 1.5em;
+	}
+	
+	#extras::after {
+		content: "";
+		clear: both;
+		display: block;
+	}
+	
+	/* Blogroll */
+	#extras .blogroll {
+		float: left;
+		width: 74%;
+	}
+	
+	/* Social */
+	#extras .social {
+		float: right;
+		width: 24%;
+	}
+	
+	#extras li {
+		margin: 0;
+	}
+
+	#extras .blogroll li {
+		float: left;
+		width: 32%;
+	}
+	
+	#extras .blogroll li:not(:nth-child(3n)) {
+		margin-right: 2%;
+	}
+}
+
+/**********************
+ * Desktop Breakpoint *
+ **********************/
+@media screen and (min-width: 960px) {
+	.main-wrapper {
+		width: 800px;
+		clear: both;
+	}
+	
+	/* Flex Styling */
+	@supports (display: flex) {
+		html { width: 100vw; height: 100vh; }
+		
+		body {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+		}
+		
+		body > * {
+			flex: none;
+		}
+		
+		#main-content {
+			flex: auto;
+			overflow-y: auto;
+			width: 100vw;
+		}
+		
+		#main-content > .main-wrapper {
+			margin: auto calc(50vw - 400px - 0.5em);
+		}
+		
+		#banner {margin-bottom: 0.5rem;}
+		#extras {margin-top: 0.5rem;}
+	}
+}
