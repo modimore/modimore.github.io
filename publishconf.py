@@ -11,12 +11,12 @@ sys.path.append(os.curdir)
 from pelicanconf import *
 
 SITEURL = 'https://modimore.github.io'
-OUTPUT_PATH = 'output'
+OUTPUT_PATH = '../pelican-build'
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
 CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
 
-DELETE_OUTPUT_DIRECTORY = True
+DELETE_OUTPUT_DIRECTORY = False
 RELATIVE_URLS = False
 
 # Following items are often useful when publishing

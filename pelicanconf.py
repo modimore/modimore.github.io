@@ -9,7 +9,6 @@ PATH = 'content'
 ARTICLE_PATHS = ['articles']
 
 OUTPUT_PATH = '../pelican-build'
-DELETE_OUTPUT_DIRECTORY = True
 
 # INDEX_SAVE_AS = 'articles.html'
 ARTICLE_SAVE_AS = 'articles/{slug}.html'
@@ -39,7 +38,7 @@ LINKS = [('BreezeBlocks on RtD', 'https://pypi.python.org/pypi/breezeblocks/'),
 SOCIAL = [('GitHub', 'https://github.com/modimore'),
          ]
 
-DEFAULT_PAGINATION = 2
+DEFAULT_PAGINATION = False
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True

@@ -14,7 +14,8 @@ Component framework.
 
 At 1P I developed web-based children's games in **JavaScript** and **Haxe**.
 Primarily I worked on a multi-stage game based on a episode of a popular
-children's TV show. The remainder were educational games for Elementary school students integrated into a larger site.
+children's TV show. The remainder were educational games for Elementary school
+students integrated into a larger site.
 
 #### [RPI Computer Science Department](https://www.cs.rpi.edu/) <span style="float:right">8/2015 - 12/2015</span>
 
