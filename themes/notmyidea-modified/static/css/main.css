@@ -74,6 +74,8 @@ h1 a:hover {
 	
 /* Paragraphs */
 p {margin: 1em 0;}
+p:first-child {margin-top: 0;}
+p:last-child {margin-bottom: 0;}
 
 /* Lists */
 dt {font-weight: bolder;}
@@ -257,10 +259,6 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 /*
 	Footer
 *****************/
-#contentinfo {
-	margin-bottom: 1rem;
-}
-
 #contentinfo p {
 	text-align: right;
 }
@@ -309,10 +307,11 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 }
 #posts-list > li {
 	border-bottom: 1px solid #444;
-	padding: 1em 0;
+	margin: 1em 0;
 }
 #posts-list > li:last-child {
 	border-bottom: none;
+	margin-bottom: 0;
 }
 
 #posts-list footer {
