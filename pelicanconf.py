@@ -28,15 +28,17 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-# Blogroll
-LINKS = [('BreezeBlocks on RtD', 'https://breezeblocks.readthedocs.io/en/latest'),
-         ('BreezeBlocks on PyPI','https://pypi.org/pypi/breezeblocks/'),
-         ('Pythia Discord Bot', 'https://discordapp.com/oauth2/authorize?client_id=202861748133298177&scope=bot&permissions=3072')
+# Links
+LINKS = [('GitHub', 'https://github.com/modimore'),
+         ('BreezeBlocks (PyPI)','https://pypi.org/pypi/breezeblocks/'),
+         ('Pythia Discord Bot', 'https://discordapp.com/oauth2/authorize?client_id=202861748133298177&scope=bot&permissions=3072'),
+         ('BreezeBlocks Docs', 'https://breezeblocks.readthedocs.io/en/latest'),
         ]
 
-# Social widget
-SOCIAL = [('GitHub', 'https://github.com/modimore'),
-         ]
+# Flair
+FLAIR = [('https://stackoverflow.com/users/7737781/quinn-mortimer', 'https://stackoverflow.com/users/flair/7737781.png?theme=clean', 'Stack Overflow profile for Quinn Mortimer'),
+         ('https://projecteuler.net/profile/modimore.png', 'https://projecteuler.net/profile/modimore.png', 'Project Euler stats for Quinn Mortimer'),
+        ]
 
 DEFAULT_PAGINATION = False
 
