@@ -4,11 +4,11 @@ Title: Resume
 
 #### [Bluewolf, An IBM Company](https://www.bluewolf.com/) <span style="float:right">6/2017 - present</span>
 
-I am currently working as a **SalesForce** platform developer, making web
-applications and back-end processes to meet client's business needs.
-I have thus far been the primary developer on two multi-month client projects.
-Much of my work relates to the SalesForce Lightning Experience and Lightning
-Component framework.
+I am currently working as a **Salesforce** platform developer.
+In addition to common programming tasks executed with Java-like and SQL-like
+languages, I have been the primary developer for two single-page applications
+written using the Lightning Component Framework, and I have also  worked on
+back-end integrations of various sizes to systems outside of Salesforce.
 
 #### [1st Playable Productions](http://www.1stplayable.com/) <span style="float:right">9/2016 - 12/2016</span>
 
