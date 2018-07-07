@@ -253,9 +253,11 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 	height: 64px;
 	margin-top: auto;
 	margin-bottom: auto;
+	text-align: center;
 }
 
 #extras .flair li img {
+	margin: 0.2em;
 	vertical-align: middle;
 }
 
