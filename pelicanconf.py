@@ -30,9 +30,9 @@ AUTHOR_FEED_RSS = None
 
 # Links
 LINKS = [('GitHub', 'https://github.com/modimore'),
-         ('BreezeBlocks (PyPI)','https://pypi.org/pypi/breezeblocks/'),
-         ('Pythia Discord Bot', 'https://discordapp.com/oauth2/authorize?client_id=202861748133298177&scope=bot&permissions=3072'),
-         ('BreezeBlocks Docs', 'https://breezeblocks.readthedocs.io/en/latest'),
+         ('BreezeBlocks','https://pypi.org/pypi/breezeblocks/'),
+         ('Add Pythia', 'https://discordapp.com/oauth2/authorize?client_id=202861748133298177&scope=bot&permissions=3072'),
+         ('BreezeBlocks ', 'https://breezeblocks.readthedocs.io/en/latest'),
         ]
 
 # Flair
