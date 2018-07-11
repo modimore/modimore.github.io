@@ -62,8 +62,6 @@ h6:first-child {
 	margin-top: 0;
 }
 
-hr {border: 2px solid #444;}
-
 /* Anchors */
 a:link, a:visited {
 	color: #C74350;
@@ -217,6 +215,10 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 	border-radius: 10px;
 }
 
+#content .section-header {
+	border-bottom: 2px dashed;
+}
+
 /*
 	Extras
 *****************/
@@ -316,43 +318,26 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 }
 
 /***** Sections *****/
-/* Blog */
-.hentry {
-	display: block;
-	clear: both;
-}
-.hentry::after {
-	content: "";
-	display: block;
-	clear: both;
-}
-.hentry img {display : none;}
-
-.entry-title {
-	margin-top: 0;
-	margin-bottom: 10px;
-	font-size: 3em;
-}
-.entry-title a:link,
-.entry-title a:visited {
-	color: #333;
-	text-decoration: none;
-}
-.entry-title a:visited {background-color: #fff;}
-
 /* Blog Index */
 #posts-list {
 	list-style: none;
 	padding: 0;
 }
 #posts-list > li {
-	border-bottom: 1px solid #444;
+	border-bottom: 2px dashed #444;
 	margin: 1em 0;
 }
 #posts-list > li:last-child {
 	border-bottom: none;
 	margin-bottom: 0;
 }
+
+#posts-list article::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+#posts-list article img {display : none;}
 
 #posts-list footer {
 	float: left;
@@ -460,18 +445,23 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 
 @media print {
 	body {
-		background-color: white;
+		background-color: initial;
 	}
 	
 	h1, h2, h3, h4, h5, h6 {
 		margin: 0.5em 0;
 	}
 	
+	a:link, a:visited {
+		color: initial;
+		text-decoration: none;
+	}
+	
 	.print-visible {
 		display: initial;
 	}
 	
-	#content {
+	#content, #featured {
 		background-color: initial;
 	}
 	
