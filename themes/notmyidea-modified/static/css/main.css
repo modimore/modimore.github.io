@@ -88,18 +88,6 @@ p:last-child {margin-bottom: 0;}
 dt {font-weight: bolder;}
 dd {margin-left: 1.5em;}
 
-.post-info {
-	float:right;
-	padding: 1em;
-}
-
-.post-info p {
-	margin-top: 1px;
-	margin-bottom: 1px;
-}
-
-.readmore {float: right}
-
 pre {
 	margin: 10px;
 	padding: 10px;
@@ -318,6 +306,17 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 }
 
 /***** Sections *****/
+/* Articles */
+.post-info {
+	float:right;
+	padding: 1em;
+}
+
+.post-info p {
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+
 /* Blog Index */
 #posts-list {
 	list-style: none;
@@ -343,6 +342,8 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 	float: left;
 	width: 25%;
 }
+
+.readmore {float: right}
 
 .paginator {
 	text-align: center;
