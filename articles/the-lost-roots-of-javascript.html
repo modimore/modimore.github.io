@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="english">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>The Lost Roots of JavaScript</title>
+	<link rel="stylesheet" href="https://modimore.github.io/theme/css/main.css" />
+	<link href="https://modimore.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="modimore.github.io Atom Feed" />
+
+	<!--[if IE]>
+		<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body id="index" class="home">
+	<header id="banner" class="main-wrapper">
+		<h1><a href="https://modimore.github.io/">modimore.github.io </a></h1>
+		<nav><ul>
+			<li><a href="https://modimore.github.io/about-me.html">About Me</a></li>
+			<li><a href="https://modimore.github.io/resume.html">Resume</a></li>
+			<li class="active"><a href="https://modimore.github.io/category/coding.html">Coding</a></li>
+			<li><a href="https://modimore.github.io/category/projects.html">Projects</a></li>
+		</ul></nav>
+	</header><!-- /#banner -->
+	<section id="main-content">
+		<div class="main-wrapper">
+<section id="content">
+	<article>
+		<header>
+			<h1>The Lost Roots of JavaScript</h1>
+		</header>
+
+		<div>
+<footer class="post-info">
+	<abbr class="published" title="2018-07-16T00:00:00-04:00">
+		Published: Mon 16 July 2018
+	</abbr>
+
+	<address class="vcard author">
+		By 			<a class="url fn" href="https://modimore.github.io/author/quinn-mortimer.html">Quinn Mortimer</a>
+	</address>
+<p>In <a href="https://modimore.github.io/category/coding.html">Coding</a></p>
+<p>tags: <a href="https://modimore.github.io/tag/programming.html">Programming</a> <a href="https://modimore.github.io/tag/javascript.html">JavaScript</a> </p>
+</footer><!-- /.post-info -->			<p>JavaScript has always been an interesting language. Its unique position as the
+programming language of the web has something to do with its popularity, but I
+think its creators also deserve credit for language design decisions made in
+designing the language.</p>
+<p>In practicality, JavaScript is at the forefront of multi-paradigm programming.
+For many developers I bet JavaScript was the first language they used
+functional programming in. In the classical, recognizable sense this is
+true with features like <code>Array.prototype.map</code>, <code>Array.prototype.reduce</code>, and
+the like, but it's commonly used at the basic level of a function being passed
+around as a first-class object. Without really being clued in to what
+functional programming is, people will learn some of the event processing
+facilities useful for web development. the window "load" event and button
+"click" event are common examples of events beginners learn about early on.</p>
+<p>JavaScript is also a lot of people's introduction to reflective programming,
+which is really so accessible in JavaScript that a lot of people don't really
+think of it too much when doing it, at least at first.</p>
+<p>Perhaps the most interesting feature of JavaScript is the prototype-based
+object model JavaScript uses. It's the only popular modern language to go this
+route, but it works for it. Especially considering how ubiquitous class-based
+object-oriented became on server-side langauges during JavaScript's lifetime
+this is impressive. Prototype-based object-oriented puts a lot more emphasis
+on objects than class-based, which to me makes it perhaps the model that
+deserves the name object-oriented more. The ability to create one-off objects
+with the option to add any and all desired properties at any time has been
+used extensively on the web by many JavaScript libraries.</p>
+<p>There are downsides to JavaScript's object model being different to the main
+competing concept. Most notably that users coming from class-based languages
+often have trouble figuring out how JavaScript objects and constructors work.
+JavaScript classes are I guess a response to this, and also provide a way to
+make things such as HTMLElement extensible, as they aren't really JS objects.
+Additionally, probably because of the bracket notation for accessing
+properties, people will create an object where semantically they are
+really trying to use an associative container such as JavaScript's Map,
+and I've had trouble explaining to even some relatively senior developers
+that the JavaScript object doesn't necessarily have the same performance
+expenctations as a proper Map.</p>
+<p>Given the above it might be fair to say there are a lot of developers
+who work with JavaScript but don't fully understand JavaScript. Developers
+from all backgrounds too, as colleges with computer science programs seem
+to invariably begin with class-based object-oriented languages and don't
+really go into how JavaScript is different in say, a programming languages
+course. If even these people that we consider trained, professional
+developers don't get it, are we at risk for losing the sense of what
+defines JavaScript?</p>
+		</div>
+		
+
+	</article>
+</section>
+		</div>
+	</section>
+	<section id="extras" class="main-wrapper">
+		<div class="links">
+			<h2>links</h2>
+			<ul>
+				<li><a href="https://github.com/modimore">GitHub</a></li>
+				<li><a href="https://pypi.org/pypi/breezeblocks/">BreezeBlocks</a></li>
+				<li><a href="https://discordapp.com/oauth2/authorize?client_id=202861748133298177&scope=bot&permissions=3072">Add Pythia</a></li>
+				<li><a href="https://breezeblocks.readthedocs.io/en/latest">BreezeBlocks </a></li>
+			</ul>
+		</div><!-- /.links -->
+		<div class="flair">
+			<h2>flair</h2>
+			<ul>
+				<li><a href="https://stackoverflow.com/users/7737781/quinn-mortimer">
+					<img src="https://stackoverflow.com/users/flair/7737781.png?theme=clean" alt="Stack Overflow profile for Quinn Mortimer" />
+				</a></li>
+				<li><a href="https://projecteuler.net/profile/modimore.png">
+					<img src="https://projecteuler.net/profile/modimore.png" alt="Project Euler stats for Quinn Mortimer" />
+				</a></li>
+			</ul>
+		</div>
+	</section><!-- /#extras -->
+
+	<footer id="contentinfo" class="main-wrapper">
+		<address id="about" class="vcard body">
+		Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+		</address><!-- /#about -->
+
+		<p>This theme is a modified version of the <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing HTML5!</a> layout by Smashing Magazine.</p>
+	</footer><!-- /#contentinfo -->
+
+</body>
+</html>

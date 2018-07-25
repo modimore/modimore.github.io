@@ -18,6 +18,7 @@
 		<nav><ul>
 			<li><a href="https://modimore.github.io/about-me.html">About Me</a></li>
 			<li><a href="https://modimore.github.io/resume.html">Resume</a></li>
+			<li><a href="https://modimore.github.io/category/coding.html">Coding</a></li>
 			<li><a href="https://modimore.github.io/category/projects.html">Projects</a></li>
 		</ul></nav>
 	</header><!-- /#banner -->
@@ -25,7 +26,119 @@
 		<div class="main-wrapper">
 			<aside id="featured">
 				<article>
-					<h1><a href="https://modimore.github.io/articles/breezeblocks-030-release.html">BreezeBlocks 0.3.0 Release</a></h1>
+					<h1><a href="https://modimore.github.io/articles/nodes-contribution-to-javascript.html">Node's contribution to JavaScript</a></h1>
+<footer class="post-info">
+	<abbr class="published" title="2018-07-24T00:00:00-04:00">
+		Published: Tue 24 July 2018
+	</abbr>
+
+	<address class="vcard author">
+		By 			<a class="url fn" href="https://modimore.github.io/author/quinn-mortimer.html">Quinn Mortimer</a>
+	</address>
+<p>In <a href="https://modimore.github.io/category/coding.html">Coding</a></p>
+<p>tags: <a href="https://modimore.github.io/tag/programming.html">Programming</a> <a href="https://modimore.github.io/tag/javascript.html">JavaScript</a> </p>
+</footer><!-- /.post-info --><p>Thinking about JavaScript a couple of years ago, it was difficult to
+determine what was part of JS as a language and what was part of the
+API it exposed in the browser. JavaScript, in contrast to a lot of
+other languages, was used in one environment and built specifically
+for that environment, the web. That can be seen in the way JavaScript
+has been taught too. Consider a theoretical book for learning JS,
+where the index looks kind of like this:</p>
+<div class="highlight"><pre><span></span>1. Hello, World
+2. Variables and Functions
+3. The Document and the Window
+   ...
+6. jQuery
+   ...
+9. Prototype-based Programming
+</pre></div>
+
+
+<p>An unfortunate side-effect of which is that for a lot of people it's
+difficult to define JavaScript outside of the browser context, and
+to say what is part of JavaScript versus what is part of APIs
+implemeted by the browser. JavaScript definitely has a specification,
+but historically there hasn't been too much value in considering 
+what was the language and the standard library and what was the
+browser. Some stuff clearly disappears; the Window API, the Document
+API, and HTML elements, all gone. But maybe some of that was good,
+and JavaScript could carve out a niche in scripting for other tree-
+like document formats. That could be a practical use of a language
+that is already used for similar tasks, but it wouldn't help us
+evaluate JavaScript as a general purpose language. For that we
+would need something that allowed JavaScript to tackle a dissimilar
+problem domain. That's what NodeJS does when it puts JavaScript on
+the other side of the client-server relationship.</p>
+<p>Server-side JavaScript has allowed us to ask what the core parts of
+JavaScript are and what was needed for it to function as a
+general-purpose language. It has allowed JavaScript to find other
+niches and allowed programmers to use JavaScript in ways not common
+in the browser. The uses that JavaScript sees are commonly
+web-adjacent. Somewhat unsurpisingly stateless transactional
+communication has turned out to be one of JavaScript's strengths,
+not just something that was done alongside DOM manipulation in the
+browser. The JS object model is good for flyweight API endpoints
+and RPC. First-class functions makes the use of various existing
+frameworks as easy as passing a function definition into one of the
+framework's functions. Event-driven programming is even still
+present, and the runtime being event-loop based is a deliberate and
+important decision for Node's runtime. The default mode being
+event-loop based is a strong statement that one of the good things
+about JavaScript is that it facilitates event-driven programming.</p>
+<p>NodeJS is also notable for its <code>require</code> functionality, which is
+completely unlike the traditional method of using different
+JavaScript files in the browser. A convenient way for your code
+to reference and rely on external libraries and objects is the
+difference between a language that can only support glue scripts
+and a language that you can write applications in. In the
+browser, the basic way you have of doing this is effectively
+just concatenating all the scripts you need something from
+together. Node's <code>require</code> and packaging ecosystem in general
+are a big step up from the bare minimum web developers have
+generally had. We're seeing developments in the browser in this
+area too, such as <a href="https://requirejs.org/">RequireJS</a> and
+ES6 modules with the import statement.</p>
+<p>Everything developed for Node isn't necessarily going to be
+appropriate to put back into client-side JavaScript. The APIs
+for local filesystem access are inappropriate for the web, as
+are foreign function interfaces. That's okay though because how
+it's expanded what JavaScript programmer's and everyone else
+sees in JavaScript is perhaps it's biggest contribution to the
+language.</p>				</article>
+			</aside><!-- /#featured -->
+				<section id="content">
+					<h1 class="section-header">Other articles</h1>
+					<ol id="posts-list" class="hfeed">
+			<li><article>
+				<header>
+					<h1><a href="https://modimore.github.io/articles/the-lost-roots-of-javascript.html" rel="bookmark"
+							title="Permalink to The Lost Roots of JavaScript">The Lost Roots of JavaScript</a></h1>
+				</header>
+				<div>
+<footer class="post-info">
+	<abbr class="published" title="2018-07-16T00:00:00-04:00">
+		Published: Mon 16 July 2018
+	</abbr>
+
+	<address class="vcard author">
+		By 			<a class="url fn" href="https://modimore.github.io/author/quinn-mortimer.html">Quinn Mortimer</a>
+	</address>
+<p>In <a href="https://modimore.github.io/category/coding.html">Coding</a></p>
+<p>tags: <a href="https://modimore.github.io/tag/programming.html">Programming</a> <a href="https://modimore.github.io/tag/javascript.html">JavaScript</a> </p>
+</footer><!-- /.post-info -->				<p>JavaScript has always been an interesting language. Its unique position as the
+programming language of the web has something to do with its popularity, but I
+think its creators also deserve credit for language design decisions made in
+designing the language.</p>
+<p>In practicality, JavaScript is at the forefront of multi-paradigm …</p>
+				<a class="readmore" href="https://modimore.github.io/articles/the-lost-roots-of-javascript.html">read more</a>
+				</div>
+			</article></li>
+			<li><article>
+				<header>
+					<h1><a href="https://modimore.github.io/articles/breezeblocks-030-release.html" rel="bookmark"
+							title="Permalink to BreezeBlocks 0.3.0 Release">BreezeBlocks 0.3.0 Release</a></h1>
+				</header>
+				<div>
 <footer class="post-info">
 	<abbr class="published" title="2018-05-07T00:00:00-04:00">
 		Published: Mon 07 May 2018
@@ -36,24 +149,13 @@
 	</address>
 <p>In <a href="https://modimore.github.io/category/projects.html">Projects</a></p>
 <p>tags: <a href="https://modimore.github.io/tag/programming.html">Programming</a> <a href="https://modimore.github.io/tag/python.html">Python</a> <a href="https://modimore.github.io/tag/sql.html">SQL</a> </p>
-</footer><!-- /.post-info --><p>The other day I released <a href="https://pypi.org/project/breezeblocks/0.3.0/">version 0.3.0</a> of BreezeBlocks. I think
+</footer><!-- /.post-info -->				<p>The other day I released <a href="https://pypi.org/project/breezeblocks/0.3.0/">version 0.3.0</a> of BreezeBlocks. I think
 development has been going rather well, though I'm probably going to slow
 down a bit on it again. Any effort I choose to put into it would probably be
-better spent on documentation than features at this point, and of course on
-using it in other stuff. This means for a while the functionality and interface
-will remain essentially the same.</p>
-<p>One of the most interesting things about this project in my opinion has been
-figuring out how to use object-oriented techniques to make the package while
-trying to make it more readily usable with some of the other paradigms Python
-supports. ORM and Active Record are some of the strongest examples of
-object-oriented trying to coerce everything into its own paradigm. Hopefully
-by minimizing their influence, BreezeBlocks can more easily fit in with
-functional, procedural, or declarative code. Maybe others will feel the same
-way.</p>				</article>
-			</aside><!-- /#featured -->
-				<section id="content">
-					<h1 class="section-header">Other articles</h1>
-					<ol id="posts-list" class="hfeed">
+better spent on documentation than features at this …</p>
+				<a class="readmore" href="https://modimore.github.io/articles/breezeblocks-030-release.html">read more</a>
+				</div>
+			</article></li>
 			<li><article>
 				<header>
 					<h1><a href="https://modimore.github.io/articles/breezeblocks.html" rel="bookmark"
