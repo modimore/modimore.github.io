@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*- #
 
 AUTHOR = 'Quinn Mortimer'
-SITENAME = 'modimore.github.io'
+SITENAME = 'modimore.net'
 SITEURL = ''
 
 PATH = 'content'

@@ -10,7 +10,7 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-SITEURL = 'https://modimore.github.io'
+SITEURL = 'https://www.modimore.net'
 OUTPUT_PATH = '../pelican-pub'
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
