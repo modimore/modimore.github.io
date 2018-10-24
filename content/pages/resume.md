@@ -15,10 +15,11 @@ Title: Resume
 </h4>
 
 I am currently working as a **Salesforce** platform developer.
-My day-to-day work includes programming tasks to be executed in Java-like and
-SQL-like languages. I have been the primary developer on two single-page
-applications written in the Lightning Component Framework, and have also worked
-on back-end integrations of various sizes to systems outside of Salesforce.
+My common tasks include full-stack development on components of web
+applications, process automation, and back-end integration to external systems.
+I am the programming lead for three active clients, and am on project teams
+for two more. I work mostly in **JavaScript**, **Apex** (like Java), and
+**SOQL** (like SQL), with ad-hoc use of other technologies as needed.
 
 <h4 class="text-left">
 	<a href="http://www.1stplayable.com/">1st Playable Productions</a>
