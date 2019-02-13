@@ -14,12 +14,12 @@ Title: Resume
 	<small style="float:right">6/2017 - present</small>
 </h4>
 
-I am currently working as a **Salesforce** platform developer.
-My common tasks include full-stack development on components of web
-applications, process automation, and back-end integration to external systems.
-I am the programming lead for three active clients, and am on project teams
-for two more. I work mostly in **JavaScript**, **Apex** (like Java), and
-**SOQL** (like SQL), with ad-hoc use of other technologies as needed.
+I am currently working as a **Salesforce** platform developer and release
+manager. As a developer I work on web applications, process automation,
+and system integration mostly using **JavaScript**, **Apex** (like Java),
+and **SOQL** (like SQL). As release manager I review and merge feature
+workstreams using **Git** and deploy using the **Salesforce metadata API**
+and **Salesforce DX** tools.
 
 <h4 class="text-left">
 	<a href="http://www.1stplayable.com/">1st Playable Productions</a>
