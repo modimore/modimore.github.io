@@ -1,6 +1,6 @@
 Title: Resume
 
-#### Quinn Mortimer
+### Quinn Mortimer
 
 <div class="links text-center">
 	<a href="mailto:quinn.e.mortimer&#64;gmail.com">quinn.e.mortimer&#64;gmail.com</a>
@@ -14,40 +14,39 @@ Title: Resume
 	<small style="float:right">6/2017 - present</small>
 </h4>
 
-I am currently working as a **Salesforce** platform developer and release
-manager. As a developer I work on web applications, process automation,
-and system integration mostly using **JavaScript**, **Apex** (like Java),
-and **SOQL** (like SQL). As release manager I review and merge feature
-workstreams using **Git** and deploy using the **Salesforce metadata API**
-and **Salesforce DX** tools.
+Currently working as a full-stack developer and release manager. I work on web
+applications, automated processes, and system integrations running on the Salesforce
+platform. I also manage a version control-centric development and release schedule
+incorporating multiple developer's changes into regular deployments.
+
+I work regularly with **JavaScript**, **HTML**,  Salesforce's **Apex** and **SOQL**
+(like Java and SQL respectively) for software development, as well as **Git** and
+**Python** for release management and automation.
 
 <h4 class="text-left">
 	<a href="http://www.1stplayable.com/">1st Playable Productions</a>
 	<small style="float:right">9/2016 - 12/2016</small>
 </h4>
 
-At 1P I developed web-based children's games in **JavaScript** and **Haxe**.
-Primarily I worked on a multi-stage game based on a episode of a popular
-children's TV show. The remainder were educational games for Elementary school
-students integrated into a larger site.
+Wrote code using **JavaScript** and **Haxe** for web-based games. These were mostly
+educational puzzle games, plus one entertainment title with multiple gameplay types.
 
 <h4 class="text-left">
 	<a href="https://www.cs.rpi.edu/">RPI Computer Science Department</a>
 	<small style="float:right">8/2015 - 12/2015</small>
 </h4>
 
-As a computer science mentor I held out-of-class help sessions for students in
-Computer Science I and Data Structures, taught with **Python** and **C++**
-respectively. I was also a teaching assistant for some CS1 lab sections.
+Assisted and graded Computer Science I students during lab exercises. Also
+participated in out-of-class help sessions for CS I and Data Structures students.
 
 <h4 class="text-left">
 	<a href="https://ups.com/">UPS</a>
 	<small style="float:right">5/2015 - 8/2015</small>
 </h4>
 
-During the summer I maintained and extended an internal **.NET** web application
-for monitoring delivery statuses. It was used in a command center for monitoring
-the day-to-day health of ground shipping operations.
+Maintained and enhanced an internal **ASP.NET** web application used in a command
+center for ground shipping operations. The application monitored and visualised
+package delivery statuses in near-real time.
 
 ### Education
 
