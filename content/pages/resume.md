@@ -7,6 +7,10 @@ Title: Resume
 	<a href="https://github.com/modimore"><span class="print-visible">github.com/</span>modimore</a>
 </div>
 
+Software developer with an ongoing passion for Python, computer graphics and game development,
+and general problem-solving. More recently gaining interest and practical experience with dev-ops
+and project management.
+
 ### Work Experience
 
 <h4 class="text-left">
