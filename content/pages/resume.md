@@ -21,7 +21,7 @@ and project management.
 Currently working as a full-stack developer and release manager. I work on web
 applications, automated processes, and system integrations running on the Salesforce
 platform. I also manage a version control-centric development and release schedule
-incorporating multiple developer's changes into regular deployments.
+incorporating multiple developers' changes into regular deployments.
 
 I work regularly with **JavaScript**, **HTML**,  Salesforce's **Apex** and **SOQL**
 (like Java and SQL respectively) for software development, as well as **Git** and
@@ -59,8 +59,8 @@ package delivery statuses in near-real time.
 	<small style="float:right">08/2012 - 12/2015</small>
 </h4>
 
-Studied Computer Science and Electrical Engineering. Graduated in 2015 with a
-Computer Science Degree. Courses taken include *Operating Systems*,
+Studied Computer Science and Electrical Engineering. Graduated with a
+BS in Computer Science. Courses taken include *Operating Systems*,
 *Advanced Computer Graphics*, *Database Systems*, *Programming Languages*,
 *Software Design and Documentation*, and *Cryptography and Network Security*.
 
