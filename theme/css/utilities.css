@@ -1,0 +1,83 @@
+/*
+ * Utilities
+ ***********/
+.fluid-rows-3,
+.fluid-rows-5 {
+	box-sizing: border-box;
+	padding-left: 0.5%;
+	padding-right: 0.5%;
+	position: relative;
+}
+
+.fluid-rows-3::after,
+.fluid-rows-5::after {
+	clear: both;
+	content: " ";
+	display: block;
+}
+
+.fluid-rows-3 > *,
+.fluid-rows-5 > * {
+	display: inline-block;
+	float: left;
+}
+
+.fluid-rows-3 > * {
+	width: 33%;
+}
+
+.fluid-rows-5 > * {
+	width: 20%;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-style-italic {
+	font-style: italic;
+}
+
+.text-weight-bold {
+	font-weight: bold;
+}
+
+@supports (display: flex) {
+	.fluid-rows-3,
+	.fluid-rows-5 {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		position: initial;
+	}
+	
+	.fluid-rows-3::after,
+	.fluid-rows-5::after {
+		clear: unset;
+		content: unset;
+		display: unset;
+	}
+
+	.fluid-rows-3 > *,
+	.fluid-rows-5 > * {
+		display: unset;
+		float: unset;
+	}
+	
+	.fluid-rows-3 > * {
+		flex: 1 0 33%;
+	}
+	
+	.fluid-rows-3 > :last-child:not(:nth-child(3n)),
+	.fluid-rows-3 > :nth-last-child(2):not(:nth-child(3n+2)) {
+		flex: 0 0 33.33%;
+	}
+	
+	.fluid-rows-5 > * {
+		flex: 1 0 20%;
+	}
+}

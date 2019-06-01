@@ -13,6 +13,7 @@
 @import url("reset.css");
 @import url("pygment.css");
 @import url("typogrify.css");
+@import url("utilities.css");
 @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz&subset=latin);
 
 /***** Global *****/
@@ -84,6 +85,8 @@ p {margin: 1em 0;}
 p:first-child {margin-top: 0;}
 p:last-child {margin-bottom: 0;}
 
+.p-flow {margin: 1em 0;}
+
 /* Lists */
 dt {font-weight: bolder;}
 dd {margin-left: 1.5em;}
@@ -109,17 +112,6 @@ thead th {text-align: left;}
 /***** Layout *****/
 img.right, figure.right {float: right; margin: 0 0 2em 2em;}
 img.left, figure.left {float: left; margin: 0 2em 2em 0;}
-
-/*
- * Utilities
- ***********/
-.text-left {
-	text-align: left;
-}
-
-.text-center {
-	text-align: center;
-}
 
 /*
 	Header
@@ -442,6 +434,7 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 	}
 }
 
+.print-hidden {/* No special styling, just here as a reminder */}
 .print-visible {display: none;}
 
 @media print {
@@ -454,11 +447,14 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 	}
 
 	h1, h3, h5 {
-		border-bottom-style: dashed;
+		border-top-style: dashed;
 	}
-	h1 {border-bottom-width: 4px;}
-	h3 {border-bottom-width: 2px;}
-	h5 {border-bottom-width: 1px;}
+	h1:first-child, h3:first-child, h5:first-child {
+		border-top: none;
+	}
+	h1 {border-top-width: 4px; padding-top: 6px;}
+	h3 {border-top-width: 2px; padding-top: 4px;}
+	h5 {border-top-width: 1px; padding-top: 2px;}
 
 	p {
 		margin: 0.5em 0;
@@ -469,9 +465,8 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 		text-decoration: none;
 	}
 
-	.print-visible {
-		display: initial;
-	}
+	.print-hidden {display: none;}
+	.print-visible {display: initial;}
 
 	#content, #featured {
 		background-color: initial;
