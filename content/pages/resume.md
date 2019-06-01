@@ -7,9 +7,10 @@ Title: Resume
 	<a href="https://github.com/modimore"><span class="print-visible">github.com/</span>modimore</a>
 </div>
 
-Software developer with an ongoing passion for Python, computer graphics and game development,
-and general problem-solving. More recently gaining interest and practical experience with dev-ops
-and project management.
+Software developer interested in problem solving, mathematics, and software
+architecture especially as related to Conway's law and how to make the project
+vision consistent with the implementation. My favourite languages are Python,
+Haskell, and C++.
 
 ### Work Experience
 
@@ -18,39 +19,65 @@ and project management.
 	<small style="float:right">6/2017 - present</small>
 </h4>
 
-Currently working as a full-stack developer and release manager. I work on web
-applications, automated processes, and system integrations running on the Salesforce
-platform. I also manage a version control-centric development and release schedule
-incorporating multiple developers' changes into regular deployments.
+Currently working as an IT consultant. I am responsible for development of web
+applications, automated processes, and system integrations as well as executing
+DevOps and release management tasks and advising on software architecture as
+needed by clients. Most of my work deals directly with the Salesforce platform.
 
-I work regularly with **JavaScript**, **HTML**,  Salesforce's **Apex** and **SOQL**
-(like Java and SQL respectively) for software development, as well as **Git** and
-**Python** for release management and automation.
+<div class="fluid-rows-5 p-flow text-center text-style-italic text-weight-bold">
+	<span>Salesforce</span>
+	<span>JavaScript</span>
+	<span>HTML</span>
+	<span>Python</span>
+	<span>Git</span>
+</div>
 
 <h4 class="text-left">
 	<a href="http://www.1stplayable.com/">1st Playable Productions</a>
 	<small style="float:right">9/2016 - 12/2016</small>
 </h4>
 
-Wrote code using **JavaScript** and **Haxe** for web-based games. These were mostly
-educational puzzle games, plus one entertainment title with multiple gameplay types.
+Developed several small web-based childrens games. These were mostly educational
+puzzle games, plus one entertainment title with multiple gameplay types.
 
-<h4 class="text-left">
-	<a href="https://www.cs.rpi.edu/">RPI Computer Science Department</a>
-	<small style="float:right">8/2015 - 12/2015</small>
-</h4>
+<div class="fluid-rows-5 p-flow text-center text-style-italic text-weight-bold">
+	<span>JavaScript</span>
+	<span>Haxe</span>
+	<span>SVN</span>
+</div>
 
-Assisted and graded Computer Science I students during lab exercises. Also
-participated in out-of-class help sessions for CS I and Data Structures students.
+<div class="print-hidden">
+	<h4 class="text-left">
+		<a href="https://www.cs.rpi.edu/">RPI Computer Science Department</a>
+		<small style="float:right">8/2015 - 12/2015</small>
+	</h4>
+
+	<p>
+		Assisted and graded Computer Science I students during lab exercises. Also
+		participated in out-of-class help sessions for CS I and Data Structures students.
+	</p>
+
+	<div class="fluid-rows-5 p-flow text-center text-style-italic text-weight-bold">
+		<span>Python</span>
+		<span>C++</span>
+	</div>
+</div>
 
 <h4 class="text-left">
 	<a href="https://ups.com/">UPS</a>
 	<small style="float:right">5/2015 - 8/2015</small>
 </h4>
 
-Maintained and enhanced an internal **ASP.NET** web application used in a command
-center for ground shipping operations. The application monitored and visualised
-package delivery statuses in near-real time.
+Maintained and enhanced an internal web application used in a command
+center for ground shipping operations. The application was used to monitor and
+visualise package delivery statuses in near-real time.
+
+<div class="fluid-rows-5 p-flow text-center text-style-italic text-weight-bold">
+	<span>C#</span>
+	<span>ASP.NET</span>
+	<span>JavaScript</span>
+	<span>T-SQL</span>
+</div>
 
 ### Education
 
@@ -64,17 +91,30 @@ BS in Computer Science. Courses taken include *Operating Systems*,
 *Advanced Computer Graphics*, *Database Systems*, *Programming Languages*,
 *Software Design and Documentation*, and *Cryptography and Network Security*.
 
-### Personal Projects
+### Key Skills
 
-#### [Breezeblocks](https://github.com/modimore/breezeblocks)
+<div class="fluid-rows-3">
+	<div style="padding: 0.25em 1em">Python <span style="float:right">&#9733; &#9733; &#9733; &#9733; &#9734;</span></div>
+	<div style="padding: 0.25em 1em">JavaScript <span style="float:right">&#9733; &#9733; &#9733; &#9733; &#9734;</span></div>
+	<div style="padding: 0.25em 1em">HTML/CSS <span style="float:right">&#9733; &#9733; &#9733; &#9734; &#9734;</span></div>
+	<div style="padding: 0.25em 1em">C/C++ <span style="float:right">&#9733; &#9733; &#9733; &#9734; &#9734;</span></div>
+	<div style="padding: 0.25em 1em">Haskell <span style="float:right">&#9733; &#9733; &#9733; &#9734; &#9734;</span></div>
+	<div style="padding: 0.25em 1em">Git <span style="float:right">&#9733; &#9733; &#9733; &#9734; &#9734;</span></div>
+	<div style="padding: 0.25em 1em">Java <span style="float:right">&#9733; &#9733; &#9733; &#9734; &#9734;</span></div>
+	<div style="padding: 0.25em 1em">SQL <span style="float:right">&#9733; &#9733; &#9734; &#9734; &#9734;</span></div>
+	<div style="padding: 0.25em 1em">Bash <span style="float:right">&#9733; &#9733; &#9734; &#9734; &#9734;</span></div>
+</div>
 
-Breezeblocks is a **Python** package for generating and executing SQL statements,
-then getting the results back in Python. It uses the **builder pattern** to allow
-the user to flexibly construct queries, inserts, updates, and deletes.
+### On the side
 
-#### [Discord Dice Bot](https://github.com/modimore/Discord-Dice-Bot)
-
-A while back I made a dice-rolling bot for [Discord](https://discordapp.com) chat
-servers. It is written in **Python**. I originally made the bot nearer to when
-Discord was released for a D&D group I was playing with. I keep a bot running on
-**Heroku** which is also used by tabletop RPG groups I am not playing with.
+<div class="fluid-rows-3">
+	<div style="padding: 0.5em">
+		Solving the Project Euler problems, mostly in Python and Haskell.
+	</div>
+	<div style="padding: 0.5em">
+		Trying to keep up a little bit with modern C++.
+	</div>
+	<div style="padding: 0.5em">
+		Exploring single-board computing with Raspberry Pi
+	</div>
+</div>
