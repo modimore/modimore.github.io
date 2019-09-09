@@ -7,10 +7,10 @@ Title: Resume
 	<a href="https://github.com/modimore"><span class="print-visible">github.com/</span>modimore</a>
 </div>
 
-Software developer interested in problem solving, mathematics, and software
-architecture especially as related to Conway's law and how to make the project
-vision consistent with the implementation. My favourite languages are Python,
-Haskell, and C++.
+Software developer interested in problem solving, software architecture, and
+DevOps. I think a lot about how the way a problem is communicated affects the
+implementation of the solution and how to effectively share information throughout
+the software development process.
 
 ### Work Experience
 
@@ -19,10 +19,10 @@ Haskell, and C++.
 	<small style="float:right">6/2017 - present</small>
 </h4>
 
-Currently working as an IT consultant. I am responsible for development of web
-applications, automated processes, and system integrations as well as executing
-DevOps and release management tasks and advising on software architecture as
-needed by clients. Most of my work deals directly with the Salesforce platform.
+Working as an IT consultant for the Salesforce platform. I am responsible for
+development on web applications, automated processes, and system integrations
+as well as executing DevOps and release management tasks and advising on software
+architecture for multiple clients.
 
 <div class="fluid-rows-5 p-flow text-center text-style-italic text-weight-bold">
 	<span>Salesforce</span>
@@ -51,12 +51,12 @@ puzzle games, plus one entertainment title with multiple gameplay types.
 		<a href="https://www.cs.rpi.edu/">RPI Computer Science Department</a>
 		<small style="float:right">8/2015 - 12/2015</small>
 	</h4>
-
+	
 	<p>
 		Assisted and graded Computer Science I students during lab exercises. Also
 		participated in out-of-class help sessions for CS I and Data Structures students.
 	</p>
-
+	
 	<div class="fluid-rows-5 p-flow text-center text-style-italic text-weight-bold">
 		<span>Python</span>
 		<span>C++</span>
@@ -91,9 +91,9 @@ BS in Computer Science. Courses taken include *Operating Systems*,
 *Advanced Computer Graphics*, *Database Systems*, *Programming Languages*,
 *Software Design and Documentation*, and *Cryptography and Network Security*.
 
-### Key Skills
+<h3 class="print-hidden">Key Skills</h3>
 
-<div class="fluid-rows-3">
+<div class="fluid-rows-3 print-hidden">
 	<div style="padding: 0.25em 1em">Python <span style="float:right">&#9733; &#9733; &#9733; &#9733; &#9734;</span></div>
 	<div style="padding: 0.25em 1em">JavaScript <span style="float:right">&#9733; &#9733; &#9733; &#9733; &#9734;</span></div>
 	<div style="padding: 0.25em 1em">HTML/CSS <span style="float:right">&#9733; &#9733; &#9733; &#9734; &#9734;</span></div>
@@ -109,10 +109,10 @@ BS in Computer Science. Courses taken include *Operating Systems*,
 
 <div class="fluid-rows-3">
 	<div style="padding: 0.5em">
-		Solving the Project Euler problems, mostly in Python and Haskell.
+		Solving Project Euler problems, mostly in Python and Haskell.
 	</div>
 	<div style="padding: 0.5em">
-		Trying to keep up a little bit with modern C++.
+		Trying to keep up with modern C++.
 	</div>
 	<div style="padding: 0.5em">
 		Exploring single-board computing with Raspberry Pi

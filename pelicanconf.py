@@ -17,7 +17,7 @@ PAGE_SAVE_AS = '{slug}.html'
 PAGE_URL = '{slug}.html'
 
 TIMEZONE = 'America/New_York'
-DEFAULT_LANG = 'English'
+DEFAULT_LANG = 'en'
 
 THEME = 'themes/notmyidea-modified'
 
