@@ -19,7 +19,7 @@ the software development process.
 	<small style="float:right">6/2017 - present</small>
 </h4>
 
-Working as an IT consultant for the Salesforce platform. I am responsible for
+Working as a software consultant for the Salesforce platform. I am responsible for
 development on web applications, automated processes, and system integrations
 as well as executing DevOps and release management tasks and advising on software
 architecture for multiple clients.
@@ -37,7 +37,7 @@ architecture for multiple clients.
 	<small style="float:right">9/2016 - 12/2016</small>
 </h4>
 
-Developed several small web-based childrens games. These were mostly educational
+Developed several small web-based children's games. These were mostly educational
 puzzle games, plus one entertainment title with multiple gameplay types.
 
 <div class="fluid-rows-5 p-flow text-center text-style-italic text-weight-bold">
@@ -112,9 +112,9 @@ BS in Computer Science. Courses taken include *Operating Systems*,
 		Solving Project Euler problems, mostly in Python and Haskell.
 	</div>
 	<div style="padding: 0.5em">
-		Trying to keep up with modern C++.
+		Keeping up with modern C++.
 	</div>
 	<div style="padding: 0.5em">
-		Exploring single-board computing with Raspberry Pi
+		Exploring single-board computing with Raspberry Pi.
 	</div>
 </div>
