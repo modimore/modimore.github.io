@@ -26,7 +26,49 @@
 		<div class="main-wrapper">
 			<aside id="featured">
 				<article>
-					<h1><a href="https://www.modimore.net/articles/nodes-contribution-to-javascript.html">Node's contribution to JavaScript</a></h1>
+					<h1><a href="https://www.modimore.net/articles/simple-distributed-locking-with-redis.html">Simple Distributed Locking with Redis</a></h1>
+<footer class="post-info">
+	<abbr class="published" title="2024-05-24T00:00:00-04:00">
+		Published: Fri 24 May 2024
+	</abbr>
+
+	<address class="vcard author">
+		By 			<a class="url fn" href="https://www.modimore.net/author/quinn-mortimer.html">Quinn Mortimer</a>
+	</address>
+<p>In <a href="https://www.modimore.net/category/coding.html">Coding</a></p>
+<p>tags: <a href="https://www.modimore.net/tag/programming.html">Programming</a> <a href="https://www.modimore.net/tag/redis.html">Redis</a> </p>
+</footer><!-- /.post-info --><p>I personally like using Redis for its flexibility and the way it simply enables the use of fundamental data structures that we all know and love in distributed applications. I've found it to be very good at bringing things together when you need coordination amongst a set of servers or containers running the same application.</p>
+<p>One of these patterns that can be a quick little thing in Redis but more involved to implement with other databases is a distributed lock, and I'd like to illustrate a simple implementation of one with Redis here. This assumes the needs for a single-mode exclusive lock on a resource among any number of servers executing the same operation on that resource. The core mechanism of this lock is a check-and-set operation performed using a commonly agreed-upon key among several instances of an application. Each instance uses a distinct value to claim the lock and determine if it is holding the lock at any given time. It can claim the lock if no other instance of the application is holding the lock.</p>
+<p>The simplest Redis lock can be managed with just the <code>SET</code> command. You can actually just run <code>SET $key $discriminator NX EX $timeout</code> and you've got a quick-and-dirty way to get timed exclusivity on whatever the lock represents. The <code>NX</code> part of that command makes <code>SET</code> operate as a check-and-set operation with the check being that the key does not have a value already. As such this single command can serve as our <code>lock</code> operation, but after acquisition you just have to wait for the lock to expire when you're done with it. A still-simple but more full-featured lock would offer some additional operations. Many users will expect an <code>unlock</code> operation and probably a <code>check</code> to see if the lock is held as well. Each of these operations can be written as a small Lua script to be invoked on the Redis server from your programming language of choice for a relatively portable implementation.</p>
+<p>Acquiring the lock is a simple <code>SET</code> call, as previously described.</p>
+<div class="highlight"><pre><span></span><code><span class="kr">return</span> <span class="n">redis</span><span class="p">.</span><span class="n">call</span><span class="p">(</span><span class="s1">&#39;SET&#39;</span><span class="p">,</span> <span class="n">KEYS</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">ARGV</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s1">&#39;NX&#39;</span><span class="p">,</span> <span class="s1">&#39;EX&#39;</span><span class="p">,</span> <span class="n">ARGV</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+</code></pre></div>
+
+<p>Checking if the lock is held is a get and a comparision to the distinct lock value used by the caller.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">holder</span> <span class="o">=</span> <span class="n">redis</span><span class="p">.</span><span class="n">call</span><span class="p">(</span><span class="s1">&#39;GET&#39;</span><span class="p">,</span> <span class="n">KEYS</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="kr">return</span> <span class="n">holder</span> <span class="o">==</span> <span class="n">ARGV</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+</code></pre></div>
+
+<p>Releasing the lock involves checking that the lock is currently held by the caller, then deleting the value of the lock key so that it is unheld again.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">holder</span> <span class="o">=</span> <span class="n">redis</span><span class="p">.</span><span class="n">call</span><span class="p">(</span><span class="s1">&#39;GET&#39;</span><span class="p">,</span> <span class="n">KEYS</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="kr">if</span> <span class="n">holder</span> <span class="o">~=</span> <span class="n">ARGV</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="kr">then</span>
+    <span class="kr">return</span> <span class="mi">0</span>
+<span class="kr">end</span>
+<span class="n">redis</span><span class="p">.</span><span class="n">call</span><span class="p">(</span><span class="s1">&#39;DEL&#39;</span><span class="p">,</span> <span class="n">KEYS</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="kr">return</span> <span class="mi">1</span>
+</code></pre></div>
+
+<p>A lock like this is easy to write and straightforward to use. It also has very modest requirements of Redis; it works well with a single-node or single-primary cluster. It is not bulletproof or foolproof but if you can tolerate or easily recovery from some duplicate work being performed this is a suitable design for a distributed lock.</p>				</article>
+			</aside><!-- /#featured -->
+				<section id="content">
+					<h1 class="section-header">Other articles</h1>
+					<ol id="posts-list" class="hfeed">
+			<li><article>
+				<header>
+					<h1><a href="https://www.modimore.net/articles/nodes-contribution-to-javascript.html" rel="bookmark"
+							title="Permalink to Node's contribution to JavaScript">Node's contribution to JavaScript</a></h1>
+				</header>
+				<div>
 <footer class="post-info">
 	<abbr class="published" title="2018-07-24T00:00:00-04:00">
 		Published: Tue 24 July 2018
@@ -37,77 +79,13 @@
 	</address>
 <p>In <a href="https://www.modimore.net/category/coding.html">Coding</a></p>
 <p>tags: <a href="https://www.modimore.net/tag/programming.html">Programming</a> <a href="https://www.modimore.net/tag/javascript.html">JavaScript</a> </p>
-</footer><!-- /.post-info --><p>Thinking about JavaScript a couple of years ago, it was difficult to
+</footer><!-- /.post-info -->				<p>Thinking about JavaScript a couple of years ago, it was difficult to
 determine what was part of JS as a language and what was part of the
 API it exposed in the browser. JavaScript, in contrast to a lot of
-other languages, was used in one environment and built specifically
-for that environment, the web. That can be seen in the way JavaScript
-has been taught too. Consider a theoretical book for learning JS,
-where the index looks kind of like this:</p>
-<div class="highlight"><pre><span></span><code><span class="mf">1.</span><span class="w"> </span><span class="n">Hello</span><span class="p">,</span><span class="w"> </span><span class="n">World</span>
-<span class="mf">2.</span><span class="w"> </span><span class="n">Variables</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">Functions</span>
-<span class="mf">3.</span><span class="w"> </span><span class="n">The</span><span class="w"> </span><span class="n">Document</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">Window</span>
-<span class="w">   </span><span class="mf">...</span>
-<span class="mf">6.</span><span class="w"> </span><span class="n">jQuery</span>
-<span class="w">   </span><span class="mf">...</span>
-<span class="mf">9.</span><span class="w"> </span><span class="n">Prototype</span><span class="o">-</span><span class="n">based</span><span class="w"> </span><span class="n">Programming</span>
-</code></pre></div>
-
-<p>An unfortunate side-effect of which is that for a lot of people it's
-difficult to define JavaScript outside of the browser context, and
-to say what is part of JavaScript versus what is part of APIs
-implemeted by the browser. JavaScript definitely has a specification,
-but historically there hasn't been too much value in considering 
-what was the language and the standard library and what was the
-browser. Some stuff clearly disappears; the Window API, the Document
-API, and HTML elements, all gone. But maybe some of that was good,
-and JavaScript could carve out a niche in scripting for other tree-
-like document formats. That could be a practical use of a language
-that is already used for similar tasks, but it wouldn't help us
-evaluate JavaScript as a general purpose language. For that we
-would need something that allowed JavaScript to tackle a dissimilar
-problem domain. That's what NodeJS does when it puts JavaScript on
-the other side of the client-server relationship.</p>
-<p>Server-side JavaScript has allowed us to ask what the core parts of
-JavaScript are and what was needed for it to function as a
-general-purpose language. It has allowed JavaScript to find other
-niches and allowed programmers to use JavaScript in ways not common
-in the browser. The uses that JavaScript sees are commonly
-web-adjacent. Somewhat unsurpisingly stateless transactional
-communication has turned out to be one of JavaScript's strengths,
-not just something that was done alongside DOM manipulation in the
-browser. The JS object model is good for flyweight API endpoints
-and RPC. First-class functions makes the use of various existing
-frameworks as easy as passing a function definition into one of the
-framework's functions. Event-driven programming is even still
-present, and the runtime being event-loop based is a deliberate and
-important decision for Node's runtime. The default mode being
-event-loop based is a strong statement that one of the good things
-about JavaScript is that it facilitates event-driven programming.</p>
-<p>NodeJS is also notable for its <code>require</code> functionality, which is
-completely unlike the traditional method of using different
-JavaScript files in the browser. A convenient way for your code
-to reference and rely on external libraries and objects is the
-difference between a language that can only support glue scripts
-and a language that you can write applications in. In the
-browser, the basic way you have of doing this is effectively
-just concatenating all the scripts you need something from
-together. Node's <code>require</code> and packaging ecosystem in general
-are a big step up from the bare minimum web developers have
-generally had. We're seeing developments in the browser in this
-area too, such as <a href="https://requirejs.org/">RequireJS</a> and
-ES6 modules with the import statement.</p>
-<p>Everything developed for Node isn't necessarily going to be
-appropriate to put back into client-side JavaScript. The APIs
-for local filesystem access are inappropriate for the web, as
-are foreign function interfaces. That's okay though because how
-it's expanded what JavaScript programmer's and everyone else
-sees in JavaScript is perhaps it's biggest contribution to the
-language.</p>				</article>
-			</aside><!-- /#featured -->
-				<section id="content">
-					<h1 class="section-header">Other articles</h1>
-					<ol id="posts-list" class="hfeed">
+other languages, was used in one environment and built specifically …</p>
+				<a class="readmore" href="https://www.modimore.net/articles/nodes-contribution-to-javascript.html">read more</a>
+				</div>
+			</article></li>
 			<li><article>
 				<header>
 					<h1><a href="https://www.modimore.net/articles/the-lost-roots-of-javascript.html" rel="bookmark"

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
-	<title>modimore.net - Coding</title>
+	<title>Simple Distributed Locking with Redis</title>
 	<link rel="stylesheet" href="https://www.modimore.net/theme/css/main.css" />
 	<link href="https://www.modimore.net/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="modimore.net Atom Feed" />
 
@@ -24,9 +24,13 @@
 	</header><!-- /#banner -->
 	<section id="main-content">
 		<div class="main-wrapper">
-			<aside id="featured">
-				<article>
-					<h1><a href="https://www.modimore.net/articles/simple-distributed-locking-with-redis.html">Simple Distributed Locking with Redis</a></h1>
+<section id="content">
+	<article>
+		<header>
+			<h1>Simple Distributed Locking with Redis</h1>
+		</header>
+
+		<div>
 <footer class="post-info">
 	<abbr class="published" title="2024-05-24T00:00:00-04:00">
 		Published: Fri 24 May 2024
@@ -37,7 +41,7 @@
 	</address>
 <p>In <a href="https://www.modimore.net/category/coding.html">Coding</a></p>
 <p>tags: <a href="https://www.modimore.net/tag/programming.html">Programming</a> <a href="https://www.modimore.net/tag/redis.html">Redis</a> </p>
-</footer><!-- /.post-info --><p>I personally like using Redis for its flexibility and the way it simply enables the use of fundamental data structures that we all know and love in distributed applications. I've found it to be very good at bringing things together when you need coordination amongst a set of servers or containers running the same application.</p>
+</footer><!-- /.post-info -->			<p>I personally like using Redis for its flexibility and the way it simply enables the use of fundamental data structures that we all know and love in distributed applications. I've found it to be very good at bringing things together when you need coordination amongst a set of servers or containers running the same application.</p>
 <p>One of these patterns that can be a quick little thing in Redis but more involved to implement with other databases is a distributed lock, and I'd like to illustrate a simple implementation of one with Redis here. This assumes the needs for a single-mode exclusive lock on a resource among any number of servers executing the same operation on that resource. The core mechanism of this lock is a check-and-set operation performed using a commonly agreed-upon key among several instances of an application. Each instance uses a distinct value to claim the lock and determine if it is holding the lock at any given time. It can claim the lock if no other instance of the application is holding the lock.</p>
 <p>The simplest Redis lock can be managed with just the <code>SET</code> command. You can actually just run <code>SET $key $discriminator NX EX $timeout</code> and you've got a quick-and-dirty way to get timed exclusivity on whatever the lock represents. The <code>NX</code> part of that command makes <code>SET</code> operate as a check-and-set operation with the check being that the key does not have a value already. As such this single command can serve as our <code>lock</code> operation, but after acquisition you just have to wait for the lock to expire when you're done with it. A still-simple but more full-featured lock would offer some additional operations. Many users will expect an <code>unlock</code> operation and probably a <code>check</code> to see if the lock is held as well. Each of these operations can be written as a small Lua script to be invoked on the Redis server from your programming language of choice for a relatively portable implementation.</p>
 <p>Acquiring the lock is a simple <code>SET</code> call, as previously described.</p>
@@ -58,60 +62,12 @@
 <span class="kr">return</span> <span class="mi">1</span>
 </code></pre></div>
 
-<p>A lock like this is easy to write and straightforward to use. It also has very modest requirements of Redis; it works well with a single-node or single-primary cluster. It is not bulletproof or foolproof but if you can tolerate or easily recovery from some duplicate work being performed this is a suitable design for a distributed lock.</p>				</article>
-			</aside><!-- /#featured -->
-				<section id="content">
-					<h1 class="section-header">Other articles</h1>
-					<ol id="posts-list" class="hfeed">
-			<li><article>
-				<header>
-					<h1><a href="https://www.modimore.net/articles/nodes-contribution-to-javascript.html" rel="bookmark"
-							title="Permalink to Node's contribution to JavaScript">Node's contribution to JavaScript</a></h1>
-				</header>
-				<div>
-<footer class="post-info">
-	<abbr class="published" title="2018-07-24T00:00:00-04:00">
-		Published: Tue 24 July 2018
-	</abbr>
+<p>A lock like this is easy to write and straightforward to use. It also has very modest requirements of Redis; it works well with a single-node or single-primary cluster. It is not bulletproof or foolproof but if you can tolerate or easily recovery from some duplicate work being performed this is a suitable design for a distributed lock.</p>
+		</div>
+		
 
-	<address class="vcard author">
-		By 			<a class="url fn" href="https://www.modimore.net/author/quinn-mortimer.html">Quinn Mortimer</a>
-	</address>
-<p>In <a href="https://www.modimore.net/category/coding.html">Coding</a></p>
-<p>tags: <a href="https://www.modimore.net/tag/programming.html">Programming</a> <a href="https://www.modimore.net/tag/javascript.html">JavaScript</a> </p>
-</footer><!-- /.post-info -->				<p>Thinking about JavaScript a couple of years ago, it was difficult to
-determine what was part of JS as a language and what was part of the
-API it exposed in the browser. JavaScript, in contrast to a lot of
-other languages, was used in one environment and built specifically …</p>
-				<a class="readmore" href="https://www.modimore.net/articles/nodes-contribution-to-javascript.html">read more</a>
-				</div>
-			</article></li>
-			<li><article>
-				<header>
-					<h1><a href="https://www.modimore.net/articles/the-lost-roots-of-javascript.html" rel="bookmark"
-							title="Permalink to The Lost Roots of JavaScript">The Lost Roots of JavaScript</a></h1>
-				</header>
-				<div>
-<footer class="post-info">
-	<abbr class="published" title="2018-07-16T00:00:00-04:00">
-		Published: Mon 16 July 2018
-	</abbr>
-
-	<address class="vcard author">
-		By 			<a class="url fn" href="https://www.modimore.net/author/quinn-mortimer.html">Quinn Mortimer</a>
-	</address>
-<p>In <a href="https://www.modimore.net/category/coding.html">Coding</a></p>
-<p>tags: <a href="https://www.modimore.net/tag/programming.html">Programming</a> <a href="https://www.modimore.net/tag/javascript.html">JavaScript</a> </p>
-</footer><!-- /.post-info -->				<p>JavaScript has always been an interesting language. Its unique position as the
-programming language of the web has something to do with its popularity, but I
-think its creators also deserve credit for language design decisions made in
-designing the language.</p>
-<p>In practicality, JavaScript is at the forefront of multi-paradigm …</p>
-				<a class="readmore" href="https://www.modimore.net/articles/the-lost-roots-of-javascript.html">read more</a>
-				</div>
-			</article></li>
-				</ol><!-- /#posts-list -->
-				</section><!-- /#content -->
+	</article>
+</section>
 		</div>
 	</section>
 	<section id="extras" class="main-wrapper">
