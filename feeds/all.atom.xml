@@ -9,15 +9,14 @@ other languages, was used in one environment and built specifically
 for that environment, the web. That can be seen in the way JavaScript
 has been taught too. Consider a theoretical book for learning JS,
 where the index looks kind of like this:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="n"&gt;Hello&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;World&lt;/span&gt;
-&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="n"&gt;Variables&lt;/span&gt; &lt;span class="k"&gt;and&lt;/span&gt; &lt;span class="n"&gt;Functions&lt;/span&gt;
-&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="n"&gt;The&lt;/span&gt; &lt;span class="n"&gt;Document&lt;/span&gt; &lt;span class="k"&gt;and&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;Window&lt;/span&gt;
-   &lt;span class="p"&gt;...&lt;/span&gt;
-&lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="n"&gt;jQuery&lt;/span&gt;
-   &lt;span class="p"&gt;...&lt;/span&gt;
-&lt;span class="mi"&gt;9&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="n"&gt;Prototype&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;based&lt;/span&gt; &lt;span class="n"&gt;Programming&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="mf"&gt;1.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Hello&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;World&lt;/span&gt;
+&lt;span class="mf"&gt;2.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Variables&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ow"&gt;and&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Functions&lt;/span&gt;
+&lt;span class="mf"&gt;3.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;The&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Document&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ow"&gt;and&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;the&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Window&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="mf"&gt;...&lt;/span&gt;
+&lt;span class="mf"&gt;6.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;jQuery&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="mf"&gt;...&lt;/span&gt;
+&lt;span class="mf"&gt;9.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Prototype&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;based&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Programming&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;An unfortunate side-effect of which is that for a lot of people it's
 difficult to define JavaScript outside of the browser context, and
@@ -69,7 +68,7 @@ for local filesystem access are inappropriate for the web, as
 are foreign function interfaces. That's okay though because how
 it's expanded what JavaScript programmer's and everyone else
 sees in JavaScript is perhaps it's biggest contribution to the
-language.&lt;/p&gt;</content><category term="Programming"></category><category term="JavaScript"></category></entry><entry><title>The Lost Roots of JavaScript</title><link href="https://www.modimore.net/articles/the-lost-roots-of-javascript.html" rel="alternate"></link><published>2018-07-16T00:00:00-04:00</published><updated>2018-07-16T00:00:00-04:00</updated><author><name>Quinn Mortimer</name></author><id>tag:www.modimore.net,2018-07-16:/articles/the-lost-roots-of-javascript.html</id><summary type="html">&lt;p&gt;JavaScript has always been an interesting language. Its unique position as the
+language.&lt;/p&gt;</content><category term="Coding"></category><category term="Programming"></category><category term="JavaScript"></category></entry><entry><title>The Lost Roots of JavaScript</title><link href="https://www.modimore.net/articles/the-lost-roots-of-javascript.html" rel="alternate"></link><published>2018-07-16T00:00:00-04:00</published><updated>2018-07-16T00:00:00-04:00</updated><author><name>Quinn Mortimer</name></author><id>tag:www.modimore.net,2018-07-16:/articles/the-lost-roots-of-javascript.html</id><summary type="html">&lt;p&gt;JavaScript has always been an interesting language. Its unique position as the
 programming language of the web has something to do with its popularity, but I
 think its creators also deserve credit for language design decisions made in
 designing the language.&lt;/p&gt;
@@ -116,7 +115,7 @@ to invariably begin with class-based object-oriented languages and don't
 really go into how JavaScript is different in say, a programming languages
 course. If even these people that we consider trained, professional
 developers don't get it, are we at risk for losing the sense of what
-defines JavaScript?&lt;/p&gt;</content><category term="Programming"></category><category term="JavaScript"></category></entry><entry><title>BreezeBlocks 0.3.0 Release</title><link href="https://www.modimore.net/articles/breezeblocks-030-release.html" rel="alternate"></link><published>2018-05-07T00:00:00-04:00</published><updated>2018-05-07T00:00:00-04:00</updated><author><name>Quinn Mortimer</name></author><id>tag:www.modimore.net,2018-05-07:/articles/breezeblocks-030-release.html</id><summary type="html">&lt;p&gt;The other day I released &lt;a href="https://pypi.org/project/breezeblocks/0.3.0/"&gt;version 0.3.0&lt;/a&gt; of BreezeBlocks. I think
+defines JavaScript?&lt;/p&gt;</content><category term="Coding"></category><category term="Programming"></category><category term="JavaScript"></category></entry><entry><title>BreezeBlocks 0.3.0 Release</title><link href="https://www.modimore.net/articles/breezeblocks-030-release.html" rel="alternate"></link><published>2018-05-07T00:00:00-04:00</published><updated>2018-05-07T00:00:00-04:00</updated><author><name>Quinn Mortimer</name></author><id>tag:www.modimore.net,2018-05-07:/articles/breezeblocks-030-release.html</id><summary type="html">&lt;p&gt;The other day I released &lt;a href="https://pypi.org/project/breezeblocks/0.3.0/"&gt;version 0.3.0&lt;/a&gt; of BreezeBlocks. I think
 development has been going rather well, though I'm probably going to slow
 down a bit on it again. Any effort I choose to put into it would probably be
 better spent on documentation than features at this …&lt;/p&gt;</summary><content type="html">&lt;p&gt;The other day I released &lt;a href="https://pypi.org/project/breezeblocks/0.3.0/"&gt;version 0.3.0&lt;/a&gt; of BreezeBlocks. I think
@@ -132,7 +131,7 @@ supports. ORM and Active Record are some of the strongest examples of
 object-oriented trying to coerce everything into its own paradigm. Hopefully
 by minimizing their influence, BreezeBlocks can more easily fit in with
 functional, procedural, or declarative code. Maybe others will feel the same
-way.&lt;/p&gt;</content><category term="Programming"></category><category term="Python"></category><category term="SQL"></category></entry><entry><title>BreezeBlocks</title><link href="https://www.modimore.net/articles/breezeblocks.html" rel="alternate"></link><published>2018-02-18T00:00:00-05:00</published><updated>2018-02-18T00:00:00-05:00</updated><author><name>Quinn Mortimer</name></author><id>tag:www.modimore.net,2018-02-18:/articles/breezeblocks.html</id><summary type="html">&lt;p&gt;BreezeBlocks is a Python package for RDBMS-independent SQL generation. From
+way.&lt;/p&gt;</content><category term="Projects"></category><category term="Programming"></category><category term="Python"></category><category term="SQL"></category></entry><entry><title>BreezeBlocks</title><link href="https://www.modimore.net/articles/breezeblocks.html" rel="alternate"></link><published>2018-02-18T00:00:00-05:00</published><updated>2018-02-18T00:00:00-05:00</updated><author><name>Quinn Mortimer</name></author><id>tag:www.modimore.net,2018-02-18:/articles/breezeblocks.html</id><summary type="html">&lt;p&gt;BreezeBlocks is a Python package for RDBMS-independent SQL generation. From
 Python objects representing the schema of a database, you can build and execute
 queries and other statements.&lt;/p&gt;
 &lt;p&gt;Compared to other packages that meet a similar need, BreezeBlocks follows more
@@ -145,7 +144,7 @@ representation has an execute method that will handle the details of getting a
 database connection and managing a transaction. The user should only need to
 be responsible for shaping the statement the way they want.&lt;/p&gt;
 &lt;p&gt;The source code is available on &lt;a href="https://github.com/modimore/BreezeBlocks"&gt;GitHub&lt;/a&gt;, the documentation is on
-&lt;a href="https://breezeblocks.readthedocs.io/en/latest"&gt;Read the Docs&lt;/a&gt;, and it is available to download from &lt;a href="https://pypi.python.org/pypi/breezeblocks/"&gt;PyPi&lt;/a&gt;.&lt;/p&gt;</content><category term="Programming"></category><category term="Python"></category><category term="SQL"></category></entry><entry><title>Discord Dice Bot</title><link href="https://www.modimore.net/articles/discord-dice-bot.html" rel="alternate"></link><published>2018-02-18T00:00:00-05:00</published><updated>2018-02-18T00:00:00-05:00</updated><author><name>Quinn Mortimer</name></author><id>tag:www.modimore.net,2018-02-18:/articles/discord-dice-bot.html</id><summary type="html">&lt;p&gt;A while ago when Discord I was in a D&amp;amp;D group that was playing over Discord,
+&lt;a href="https://breezeblocks.readthedocs.io/en/latest"&gt;Read the Docs&lt;/a&gt;, and it is available to download from &lt;a href="https://pypi.python.org/pypi/breezeblocks/"&gt;PyPi&lt;/a&gt;.&lt;/p&gt;</content><category term="Projects"></category><category term="Programming"></category><category term="Python"></category><category term="SQL"></category></entry><entry><title>Discord Dice Bot</title><link href="https://www.modimore.net/articles/discord-dice-bot.html" rel="alternate"></link><published>2018-02-18T00:00:00-05:00</published><updated>2018-02-18T00:00:00-05:00</updated><author><name>Quinn Mortimer</name></author><id>tag:www.modimore.net,2018-02-18:/articles/discord-dice-bot.html</id><summary type="html">&lt;p&gt;A while ago when Discord I was in a D&amp;amp;D group that was playing over Discord,
 and we needed a good dice-roller to use in-chat. I wrote up this bot using
 the &lt;a href="https://github.com/"&gt;Discord API wrapper&lt;/a&gt; for Python so we could get pseudo-random
 results in-chat.&lt;/p&gt;
@@ -155,4 +154,4 @@ the &lt;a href="https://github.com/"&gt;Discord API wrapper&lt;/a&gt; for Python
 results in-chat.&lt;/p&gt;
 &lt;p&gt;That D&amp;amp;D group is not meeting currently, but a couple of other groups have
 taken up using an instance of the bot named Pythia I keep running on Heroku.
-If you'd like to have her roll dice for your group, you can do so &lt;a href="https://discordapp.com/oauth2/authorize?client_id=202861748133298177&amp;amp;scope=bot&amp;amp;permissions=3072"&gt;here&lt;/a&gt;.&lt;/p&gt;</content><category term="Programming"></category><category term="Python"></category></entry></feed>
+If you'd like to have her roll dice for your group, you can do so &lt;a href="https://discordapp.com/oauth2/authorize?client_id=202861748133298177&amp;amp;scope=bot&amp;amp;permissions=3072"&gt;here&lt;/a&gt;.&lt;/p&gt;</content><category term="Projects"></category><category term="Programming"></category><category term="Python"></category></entry></feed>
