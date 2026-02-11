@@ -17,6 +17,11 @@
 @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz&subset=latin);
 
 /***** Global *****/
+/* HTML root element */
+html {
+	scrollbar-color: #C74451 #000305;
+	scrollbar-width: thin;
+}
 /* Body */
 body {
 	background-color: #c7bfcf;
@@ -421,7 +426,10 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 
 		#main-content {
 			flex: auto;
-			overflow-y: auto;
+			overflow: hidden auto;
+			scrollbar-color: #C74451 #000305;
+			scrollbar-gutter: stable both-edges;
+			scrollbar-width: thin;
 			width: 100vw;
 		}
 
