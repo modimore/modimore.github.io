@@ -41,10 +41,11 @@ around AWS EC2 and puppet to one based on Helm and AWS EKS.
 	<small style="float:right">6/2017 - 08/2020</small>
 </h4>
 
-Worked as a software consultant for the Salesforce platform. I was responsible for
-development on web applications, automated processes, and system integrations
-as well as executing DevOps and release management tasks and advising on software
-architecture for multiple clients.
+Worked as a software consultant specialized in customising and extending the
+Salesforce platform. Depending on client needs I was responsible for developing
+web applications, automating business processes, and integrations with external
+systems as well as advising on software architecture and DevOps and release
+management.
 
 <div class="fluid-rows-5 p-flow text-center text-style-italic text-weight-bold">
 	<span>Salesforce</span>
