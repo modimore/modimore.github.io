@@ -19,14 +19,21 @@ the software development process.
 	<small style="float:right">9/2020 - present</small>
 </h4>
 
-Backend engineer working on FanDuel's Daily Fantasy Sports product. My main areas of responsibility are the contest lifecycle, core product rules, and live scoring experience.
+Currently a Staff Software Engineer for the Daily Fantasy Sports (DFS) product.
+Started out as an engineer in a full-stack team aligned to the DFS's fundamental
+customer user journeys, then shifted to a backend-oriented focus on the product's
+core mechanisms and domain definition. Now the lead backend engineer for the
+product as a whole.
+
+Working on migrating the product's services from an internal platform built
+around AWS EC2 and puppet to one based on Helm and AWS EKS.
 
 <div class="fluid-rows-5 p-flow text-center text-style-italic text-weight-bold">
 	<span>Java</span>
 	<span>Python</span>
-	<span>MySQL</span>
-	<span>Redis</span>
 	<span>AWS</span>
+	<span>Kubernetes</span>
+	<span>MySQL</span>
 </div>
 
 <h4 class="text-left">
