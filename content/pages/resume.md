@@ -15,14 +15,34 @@ the software development process.
 ### Work Experience
 
 <h4 class="text-left">
-	<a href="https://www.bluewolf.com/">Bluewolf, An IBM Company</a>
-	<small style="float:right">6/2017 - present</small>
+	<a href="https://fanduel.com/">FanDuel</a>
+	<small style="float:right">9/2020 - present</small>
 </h4>
 
-Working as a software consultant for the Salesforce platform. I am responsible for
-development on web applications, automated processes, and system integrations
-as well as executing DevOps and release management tasks and advising on software
-architecture for multiple clients.
+Currently a Staff Software Engineer for the Daily Fantasy Sports (DFS) product.
+Started out as an engineer in a full-stack team aligned to the DFS's fundamental
+customer user journeys, then shifted to a backend-oriented focus on the product's
+core mechanisms and domain definition. Now the lead backend engineer for the
+product as a whole.
+
+<div class="fluid-rows-5 p-flow text-center text-style-italic text-weight-bold">
+	<span>Java</span>
+	<span>Python</span>
+	<span>AWS</span>
+	<span>Kubernetes</span>
+	<span>MySQL</span>
+</div>
+
+<h4 class="text-left">
+	<a href="https://www.bluewolf.com/">Bluewolf, An IBM Company</a>
+	<small style="float:right">6/2017 - 08/2020</small>
+</h4>
+
+Worked as a software consultant specialized in customising and extending the
+Salesforce platform. Depending on client needs I was responsible for developing
+web applications, automating business processes, and integrations with external
+systems as well as advising on software architecture and DevOps and release
+management.
 
 <div class="fluid-rows-5 p-flow text-center text-style-italic text-weight-bold">
 	<span>Salesforce</span>
