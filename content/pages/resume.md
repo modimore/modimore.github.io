@@ -90,20 +90,24 @@ management.
 	</div>
 </div>
 
-<h4 class="text-left">
-	<a href="https://ups.com/">UPS</a>
-	<small style="float:right">5/2015 - 8/2015</small>
-</h4>
+<div class="print-hidden">
+	<h4 class="text-left">
+		<a href="https://ups.com/">UPS</a>
+		<small style="float:right">5/2015 - 8/2015</small>
+	</h4>
 
-Maintained and enhanced an internal web application used in a command
-center for ground shipping operations. The application was used to monitor and
-visualise package delivery statuses in near-real time.
+	<p>
+		Maintained and enhanced an internal web application used in a command
+		center for ground shipping operations. The application was used to monitor and
+		visualise package delivery statuses in near-real time.
+	</p>
 
-<div class="fluid-rows-5 p-flow text-center text-style-italic text-weight-bold">
-	<span>C#</span>
-	<span>ASP.NET</span>
-	<span>JavaScript</span>
-	<span>jQuery</span>
+	<div class="fluid-rows-5 p-flow text-center text-style-italic text-weight-bold">
+		<span>C#</span>
+		<span>ASP.NET</span>
+		<span>JavaScript</span>
+		<span>jQuery</span>
+	</div>
 </div>
 
 ### Education
