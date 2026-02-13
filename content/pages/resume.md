@@ -99,7 +99,7 @@ visualise package delivery statuses in near-real time.
 	<span>C#</span>
 	<span>ASP.NET</span>
 	<span>JavaScript</span>
-	<span>T-SQL</span>
+	<span>jQuery</span>
 </div>
 
 ### Education
