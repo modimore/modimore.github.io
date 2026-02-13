@@ -55,18 +55,22 @@ management.
 	<span>Git</span>
 </div>
 
-<h4 class="text-left">
-	<a href="http://www.1stplayable.com/">1st Playable Productions</a>
-	<small style="float:right">9/2016 - 12/2016</small>
-</h4>
+<div class="print-hidden">
+	<h4 class="text-left">
+		<a href="http://www.1stplayable.com/">1st Playable Productions</a>
+		<small style="float:right">9/2016 - 12/2016</small>
+	</h4>
 
-Developed several small web-based children's games. These were mostly educational
-puzzle games, plus one entertainment title with multiple gameplay types.
+	<p>
+		Developed several small web-based children's games. These were mostly educational
+		puzzle games, plus one entertainment title with multiple gameplay types.
+	</p>
 
-<div class="fluid-rows-5 p-flow text-center text-style-italic text-weight-bold">
-	<span>JavaScript</span>
-	<span>Haxe</span>
-	<span>SVN</span>
+	<div class="fluid-rows-5 p-flow text-center text-style-italic text-weight-bold">
+		<span>JavaScript</span>
+		<span>Haxe</span>
+		<span>SVN</span>
+	</div>
 </div>
 
 <div class="print-hidden">
