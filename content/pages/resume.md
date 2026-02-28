@@ -25,6 +25,9 @@ customer user journeys, then shifted to a backend-oriented focus on the product'
 core mechanisms and domain definition. Now the lead backend engineer for the
 product as a whole.
 
+Working on migrating the product's services from an internal platform built
+around AWS EC2 and puppet to one based on Helm and AWS EKS.
+
 <div class="fluid-rows-5 p-flow text-center text-style-italic text-weight-bold">
 	<span>Java</span>
 	<span>Python</span>
