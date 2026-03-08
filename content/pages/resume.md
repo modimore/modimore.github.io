@@ -7,10 +7,10 @@ Title: Resume
 	<a href="https://github.com/modimore"><span class="print-visible">github.com/</span>modimore</a>
 </div>
 
-Software developer interested in problem solving, software architecture, and
-DevOps. I think a lot about how the way a problem is communicated affects the
-implementation of the solution and how to effectively share information throughout
-the software development process.
+Software engineer specializing in backend application development. I try to adhere
+to principles of Domain Driven Design in what I work on and verify my own work with
+service-level integration tests. Prefers working in a Kanban-like process where it
+fits with the nature of the work.
 
 ### Work Experience
 
