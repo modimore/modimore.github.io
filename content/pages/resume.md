@@ -15,11 +15,26 @@ the software development process.
 ### Work Experience
 
 <h4 class="text-left">
-	<a href="https://www.bluewolf.com/">Bluewolf, An IBM Company</a>
-	<small style="float:right">6/2017 - present</small>
+	<a href="https://fanduel.com/">FanDuel</a>
+	<small style="float:right">9/2020 - present</small>
 </h4>
 
-Working as a software consultant for the Salesforce platform. I am responsible for
+Backend engineer working on FanDuel's Daily Fantasy Sports product. My main areas of responsibility are the contest lifecycle, core product rules, and live scoring experience.
+
+<div class="fluid-rows-5 p-flow text-center text-style-italic text-weight-bold">
+	<span>Java</span>
+	<span>Python</span>
+	<span>MySQL</span>
+	<span>Redis</span>
+	<span>AWS</span>
+</div>
+
+<h4 class="text-left">
+	<a href="https://www.bluewolf.com/">Bluewolf, An IBM Company</a>
+	<small style="float:right">6/2017 - 08/2020</small>
+</h4>
+
+Worked as a software consultant for the Salesforce platform. I was responsible for
 development on web applications, automated processes, and system integrations
 as well as executing DevOps and release management tasks and advising on software
 architecture for multiple clients.
